@@ -1,21 +1,25 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import './footer.css'
+import dotMatrix from '../../assets/test_dot_matrix.png'
 
 
 function Footer () {
   return (
     <footer>
       <Banner />  
-        <Stack
-          direction="row"
-          spacing={2}
-        >
-          <Respects />
-          <WebLinks />
-          <SocialLinks />
-          <ContactLinks />
-        </Stack>
+      <Stack
+        direction="row"
+        spacing={2}
+        className='chunk'
+      >
+        <Respects />
+        <WebLinks />
+        <SocialLinks />
+        <ContactLinks />
+        <img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
+      </Stack>
+      <Policies />
     </footer>
   );
 };
@@ -28,16 +32,10 @@ function Banner () {
       direction="row"
       alignItems="center"
       justifyContent="space-between"
-      className="heading-box"
+      className="heading-box chunk-no-border"
     >
-      <img src="./src/assets/temp_logo.jpg" alt="Swinburne Rover Team Logo" width="300"/>
-      <ul>
-        <li>
-          <h2>
-            Let's push the boundaries of what we can achieve together
-          </h2>
-        </li>
-      </ul>
+      <img src="./src/assets/temp_logo.jpg" alt="Swinburne Rover Team Logo"/>
+      <h2 className='red-bullet'>Let's push the boundaries of what we can achieve together.</h2>
     </Stack>
   );
 };
@@ -46,13 +44,13 @@ function Respects () {
   return (
     <Stack
       direction="column"
-      justifyContent="space-evenly"     
+      justifyContent="flex-start"
     >
       <p>
-        We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, the Wurundjeri People of the Kulin Nation
+        We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, the Wurundjeri People of the Kulin Nation.
       </p>
       <p>
-        &#169 2024. All rights reserved. Swinburne Rover Team.
+      © 2024. All rights reserved. Swinburne Rover Team.
       </p>
     </Stack>
   );
@@ -61,9 +59,10 @@ function Respects () {
 function WebLinks () {
   return (
     <Stack
-      direction="column"
-      justifyContent="flex-start"
-      alignItems="flex-start"
+    direction="column"
+    justifyContent="flex-start"
+    alignItems="flex-start"
+    className='links'
     >
       <h3>Website</h3>
       <a href="#">Home</a>
@@ -81,6 +80,7 @@ function SocialLinks () {
       direction="column"
       justifyContent="flex-start"
       alignItems="flex-start"
+      className='links'
     >
       <h3>Social</h3>
       <a href="#">Instagram</a>
@@ -95,6 +95,7 @@ function ContactLinks () {
       direction="column"
       justifyContent="flex-start"
       alignItems="flex-start"
+      className='links'
     >
       <h3>Contact</h3>
       <a href="#">Contact</a>
@@ -104,5 +105,20 @@ function ContactLinks () {
     </Stack>
   );
 };
+
+function Policies () {
+  return (
+    <Stack
+      direction="row"
+      className='chunk'
+      alignItems='center'
+      justifyContent="flex-start"
+      spacing={4}
+    >
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </Stack>
+  );
+}
 
 export default Footer;

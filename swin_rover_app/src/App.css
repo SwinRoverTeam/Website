@@ -7,7 +7,20 @@ Somewhat of a middle-ground between global and specific styles.
 
 */
 
+:root{
+  --swin-red: #da3838;
+}
+
+
 .heading-box{
-  padding: 5vw, 0;
-  border-bottom: solid 1px #303030;
+  padding: 0, 5%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.red-bullet::before {
+  content: '•';
+  color: var(--swin-red);
+  margin-right: 1rem;
+  font-size: 3rem;
 }

@@ -24,9 +24,22 @@ This file should be used for global styles only.
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* I have been using this class to define a single vertical chunk of the page.
+These sections are separated by their top border.*/
+.chunk {
+  padding: 25px 5vw 50px;
+  border-top: solid 1px #303030;
+}
+.chunk-no-border {
+  padding: 1.5vh 5vw 4vh;
+}
+
 a {
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-weight: 300;
 }
 
 body {
@@ -41,8 +54,18 @@ h2 {
   font-weight: 200;
   line-height: 1.1;
   text-align: left;
+  /* The two values below exist to correctly align the text after
+  the red bullet pseudo element misaligns the text wrapping.*/
+  text-indent: -0.53em;
+  padding-left: 0.53em;
+}
+
+h3 {
+  font-weight: 350;
+  font-size: 1.8rem;
 }
 
 p {
   font-size: 2em;
+  margin-bottom: 0.5em;
 }
