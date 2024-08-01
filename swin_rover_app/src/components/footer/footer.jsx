@@ -18,6 +18,7 @@ function Footer () {
         <SocialLinks />
         <ContactLinks />
         <img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
+        {/* Image source: https://clipground.com/dot-pattern-png.html */}
       </Stack>
       <Policies />
     </footer>
