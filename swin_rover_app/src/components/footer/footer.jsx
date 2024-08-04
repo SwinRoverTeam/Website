@@ -1,7 +1,9 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 import './footer.css'
 import dotMatrix from '../../assets/test_dot_matrix.png'
+import SRTLogo from '../../assets/srt-logo.svg'
 
 
 function Footer () {
@@ -9,16 +11,24 @@ function Footer () {
 		<footer>
 			<Banner />  
 			<Stack
-				direction='row'
+				direction={{ xs:'column-reverse', md: 'row' }}
 				spacing={10}
 				className='chunk'
 			>
 				<Respects />
-				<WebLinks />
-				<SocialLinks />
-				<ContactLinks />
-				<img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
-				{/* Image source: https://clipground.com/dot-pattern-png.html */}
+				<Stack
+					direction='row'
+					spacing={{ xs: 0, md: 10 }}
+					justifyContent={{ xs: 'space-evenly', lg: 'none'}}
+				>
+					<WebLinks />
+					<SocialLinks />
+					<ContactLinks />
+				</Stack>
+				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
+					<img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
+					{/* Image source: https://clipground.com/dot-pattern-png.html */}
+				</Box>
 			</Stack>
 			<Policies />
 		</footer>
@@ -30,14 +40,18 @@ function Footer () {
 function Banner () {
 	return (
 		<Stack
-			direction={{xs: 'column', md: 'row'}}
+			direction={{ xs: 'column', md: 'row'}}
 			alignItems='center'
 			className='heading-box chunk-no-border'
 			spacing={8}
 		>
 
-			<img src='./src/assets/srt-logo.svg' alt='Swinburne Rover Team Logo' className='logo'/>
-			<h2 className='red-bullet'>Let's push the boundaries of what we can achieve together.</h2>
+			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo'/>
+			<Box display={{ xs: 'none', md: 'block' }}>
+				<h2 className='red-bullet'>
+					Let's push the boundaries of what we can achieve together.
+				</h2>
+			</Box>
 		</Stack>
 	);
 };
