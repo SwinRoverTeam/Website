@@ -10,36 +10,38 @@ This file should be used for global styles only.
 }
 
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: "Inter", sans-serif;
 	line-height: 1.5;
 	font-weight: 200;
 	letter-spacing: 0.005em;
 
-	color: rgba(255, 255, 255, 0.87);
+	color: rgba(255, 255, 255, 1);
 	background-color: #111111;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	--swin-red: #da3838;
 }
 
-/* I have been using this class to define a single vertical chunk of the page.
-These sections are separated by their top border.*/
-.chunk {
-	padding: 25px 5vw 50px;
-	border-top: solid 1px #303030;
+/* ********** Font Variations ********** */
+.inter-paragraph {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2em;
 }
-.chunk-no-border {
-	padding: 1.5vh 5vw 4vh;
+.inter-links {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2em;
+	font-size: 1.2em;
 }
+
 
 a {
 	text-decoration: none;
-	color: white;
-	font-size: 1.2em;
 	line-height: 1.8em;
-	font-weight: 300;
 }
 
 body {
@@ -54,10 +56,6 @@ h2 {
 	font-weight: 200;
 	line-height: 1.1;
 	text-align: left;
-	/* The two values below exist to correctly align the text after
-	the red bullet pseudo element misaligns the text wrapping.*/
-	text-indent: -0.53em;
-	padding-left: 0.53em;
 }
 
 h3 {
@@ -66,6 +64,5 @@ h3 {
 }
 
 p {
-	font-size: 2em;
 	margin-bottom: 0.5em;
 }

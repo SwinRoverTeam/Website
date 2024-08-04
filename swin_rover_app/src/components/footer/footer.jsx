@@ -9,7 +9,7 @@ function Footer () {
 		<footer>
 			<Banner />  
 			<Stack
-				direction="row"
+				direction='row'
 				spacing={2}
 				className='chunk'
 			>
@@ -30,12 +30,13 @@ function Footer () {
 function Banner () {
 	return (
 		<Stack
-			direction="row"
-			alignItems="center"
-			justifyContent="space-between"
-			className="heading-box chunk-no-border"
+			direction={{xs: 'column', md: 'row'}}
+			alignItems='center'
+			className='heading-box chunk-no-border'
+			spacing={8}
 		>
-			<img src="./src/assets/temp_logo.jpg" alt="Swinburne Rover Team Logo"/>
+
+			<img src='./src/assets/srt-logo.svg' alt='Swinburne Rover Team Logo' className='logo'/>
 			<h2 className='red-bullet'>Let's push the boundaries of what we can achieve together.</h2>
 		</Stack>
 	);
@@ -44,8 +45,9 @@ function Banner () {
 function Respects () {
 	return (
 		<Stack
-			direction="column"
-			justifyContent="flex-start"
+			direction='column'
+			justifyContent='flex-start'
+			className='inter-paragraph'
 		>
 			<p>
 				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, 
@@ -61,17 +63,17 @@ function Respects () {
 function WebLinks () {
 	return (
 		<Stack
-			direction="column"
-			justifyContent="flex-start"
-			alignItems="flex-start"
+			direction='column'
+			justifyContent='flex-start'
+			alignItems='flex-start'
 			className='links'
 		>
 			<h3>Website</h3>
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Team</a>
-			<a href="#">Projects</a>
-			<a href="#">Sponsors</a>
+			<a href='#' className='inter-links'>Home</a>
+			<a href='#' className='inter-links'>About</a>
+			<a href='#' className='inter-links'>Team</a>
+			<a href='#' className='inter-links'>Projects</a>
+			<a href='#' className='inter-links'>Sponsors</a>
 		</Stack>
 	);
 };
@@ -79,14 +81,14 @@ function WebLinks () {
 function SocialLinks () {
 	return (
 		<Stack
-			direction="column"
-			justifyContent="flex-start"
-			alignItems="flex-start"
+			direction='column'
+			justifyContent='flex-start'
+			alignItems='flex-start'
 			className='links'
 		>
 			<h3>Social</h3>
-			<a href="#">Instagram</a>
-			<a href="#">LinkedIn</a>
+			<a href='#'>Instagram</a>
+			<a href='#'>LinkedIn</a>
 		</Stack>
 	);
 };
@@ -94,16 +96,16 @@ function SocialLinks () {
 function ContactLinks () {
 	return (
 		<Stack
-			direction="column"
-			justifyContent="flex-start"
-			alignItems="flex-start"
+			direction='column'
+			justifyContent='flex-start'
+			alignItems='flex-start'
 			className='links'
 		>
 			<h3>Contact</h3>
-			<a href="#">Contact</a>
-			<a href="#">Join team</a>
-			<a href="#">Sponsor</a>
-			<a href="#">Email</a>
+			<a href='#'>Contact</a>
+			<a href='#'>Join team</a>
+			<a href='#'>Sponsor</a>
+			<a href='#'>Email</a>
 		</Stack>
 	);
 };
@@ -111,14 +113,14 @@ function ContactLinks () {
 function Policies () {
 	return (
 		<Stack
-			direction="row"
+			direction='row'
 			className='chunk'
 			alignItems='center'
-			justifyContent="flex-start"
+			justifyContent='flex-start'
 			spacing={4}
 		>
-			<a href="#">Terms and Conditions</a>
-			<a href="#">Privacy Policy</a>
+			<a href='#'>Terms and Conditions</a>
+			<a href='#'>Privacy Policy</a>
 		</Stack>
 	);
 }
