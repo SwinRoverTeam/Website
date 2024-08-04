@@ -8,19 +8,19 @@ Somewhat of a middle-ground between global and specific styles.
 */
 
 :root{
-  --swin-red: #da3838;
+	--swin-red: #da3838;
 }
 
 
 .heading-box{
-  padding: 0, 5%;
-  display: flex;
-  align-items: flex-start;
-}
+	padding: 0, 5%;
+	display: flex;
+	align-items: flex-start;
+	}
 
 .red-bullet::before {
-  content: '•';
-  color: var(--swin-red);
-  margin-right: 1rem;
-  font-size: 3rem;
+	content: '•';
+	color: var(--swin-red);
+	margin-right: 1rem;
+	font-size: 3rem;
 }

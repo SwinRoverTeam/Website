@@ -3,69 +3,69 @@ This file should be used for global styles only.
 */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 200;
-  letter-spacing: 0.005em;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 200;
+	letter-spacing: 0.005em;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #111111;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #111111;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* I have been using this class to define a single vertical chunk of the page.
 These sections are separated by their top border.*/
 .chunk {
-  padding: 25px 5vw 50px;
-  border-top: solid 1px #303030;
+	padding: 25px 5vw 50px;
+	border-top: solid 1px #303030;
 }
 .chunk-no-border {
-  padding: 1.5vh 5vw 4vh;
+	padding: 1.5vh 5vw 4vh;
 }
 
 a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  line-height: 1.8em;
-  font-weight: 300;
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	font-weight: 300;
 }
 
 body {
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
 }
 
 h2 {
-  font-size: 4em;
-  font-weight: 200;
-  line-height: 1.1;
-  text-align: left;
-  /* The two values below exist to correctly align the text after
-  the red bullet pseudo element misaligns the text wrapping.*/
-  text-indent: -0.53em;
-  padding-left: 0.53em;
+	font-size: 4em;
+	font-weight: 200;
+	line-height: 1.1;
+	text-align: left;
+	/* The two values below exist to correctly align the text after
+	the red bullet pseudo element misaligns the text wrapping.*/
+	text-indent: -0.53em;
+	padding-left: 0.53em;
 }
 
 h3 {
-  font-weight: 350;
-  font-size: 1.8rem;
+	font-weight: 350;
+	font-size: 1.8rem;
 }
 
 p {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+	font-size: 2em;
+	margin-bottom: 0.5em;
 }
