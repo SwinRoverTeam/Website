@@ -10,7 +10,7 @@ function Footer () {
 			<Banner />  
 			<Stack
 				direction='row'
-				spacing={2}
+				spacing={10}
 				className='chunk'
 			>
 				<Respects />
@@ -87,8 +87,8 @@ function SocialLinks () {
 			className='links'
 		>
 			<h3>Social</h3>
-			<a href='#'>Instagram</a>
-			<a href='#'>LinkedIn</a>
+			<a href='#' className='inter-links'>Instagram</a>
+			<a href='#' className='inter-links'>LinkedIn</a>
 		</Stack>
 	);
 };
@@ -102,10 +102,10 @@ function ContactLinks () {
 			className='links'
 		>
 			<h3>Contact</h3>
-			<a href='#'>Contact</a>
-			<a href='#'>Join team</a>
-			<a href='#'>Sponsor</a>
-			<a href='#'>Email</a>
+			<a href='#' className='inter-links'>Contact</a>
+			<a href='#' className='inter-links'>Join team</a>
+			<a href='#' className='inter-links'>Sponsor</a>
+			<a href='#' className='inter-links'>Email</a>
 		</Stack>
 	);
 };
@@ -119,8 +119,8 @@ function Policies () {
 			justifyContent='flex-start'
 			spacing={4}
 		>
-			<a href='#'>Terms and Conditions</a>
-			<a href='#'>Privacy Policy</a>
+			<a href='#' className='inter-links'>Terms and Conditions</a>
+			<a href='#' className='inter-links'>Privacy Policy</a>
 		</Stack>
 	);
 }
