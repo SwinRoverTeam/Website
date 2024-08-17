@@ -1,25 +1,25 @@
 import Typography from '@mui/material/Typography';
 import { ButtonGroup, capitalize } from '@mui/material';
 import {Button} from '@mui/material';
+import '../styles/Navbar.css'
 
 export default function Options(){
     return(
         <>
             <ButtonGroup 
-                variant="contained outlined"
                 sx={{
                     borderBottom: 1,
-                    borderColor: 'secondary',
-                    borderRadius: 0,
+                    borderColor: '#333333',
                     py: 3,
+                    position: 'relative',
                     display: 'flex',
-                    flexGrow: 1,
-                }}
+                    borderRadius: 0
+                  }}
             >
-                <Button sx={{textTransform: 'capitalize', '&:hover':{textDecoration: 'underline'}}}>Home</Button>
-                <Button sx={{textTransform: 'capitalize', '&:hover':{textDecoration: 'underline'}}}>About</Button>
-                <Button sx={{textTransform: 'capitalize', '&:hover':{textDecoration: 'underline'}}}>Projects</Button>
-                <Button sx={{textTransform: 'capitalize', '&:hover':{textDecoration: 'underline'}}}>Sponsors</Button>
+                <Button class="underline">Home</Button>
+                <Button class="underline">About</Button>
+                <Button class="underline">Projects</Button>
+                <Button class="underline">Sponsors</Button>
             </ButtonGroup>
         </>
     )

@@ -7,6 +7,9 @@ import { useState } from 'react';
 import Options from './navbar_comps/Options';
 import Slide from '@mui/material/Slide';
 import { Close} from '@mui/icons-material';
+import Logo from '../assets/logo.png'
+import { AppBar } from '@mui/material';
+import './styles/Navbar.css';
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -17,29 +20,47 @@ export default function Navbar() {
 
   return (
     <>
-      <Box class="Navbar" sx={{position: "sticky", zIndex: 1, backgroundColor: "black"}}>
+      <AppBar sx={{position: "sticky", backgroundColor: "transparent"}}>
         <Toolbar 
         sx={{
             borderBottom: 1,
-            borderColor: 'secondary',
-            py: 2
+            borderColor: '#333333',
+            py: 3,
+            position: 'relative',
+            display: 'flex'
           }}
         >
           <Box sx={{ flexGrow: 1 }}>
-            <img src="../assets/react.svg" alt="logo" width="40" height="40"/>
+            <img src={Logo} alt="logo" width="125"/>
           </Box>
             <Button
               sx={{
                 textTransform: 'capitalize',
                 px: 1.5,
+                right: 2,
                 borderRadius: 5,
                 backgroundColor: 'white',
                 color: 'black',
-                //change button colour theme when hovered
-                '&:hover':{
+                position: 'relative',
+                overflow: 'hidden',
+                '&::before': {
+                  content: '""',
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  backgroundColor: '#DA3838',
+                  transform: 'translateY(100%)',
+                  transition: 'transform 0.2s ease',
+                },
+                '&:hover::before': {
+                  transform: 'translateY(0%)',
+                },
+                '& > *': {
+                  position: 'relative',
+                },
+                '&:hover': {
                   color: 'white',
-                  backgroundColor: '#DA3838'
-                }
+                },
               }}
               onClick={handleClick}
             >
@@ -61,17 +82,15 @@ export default function Navbar() {
               }
             </Button>
         </Toolbar>
+        <Box sx={{overflow:'hidden'}}>
+          <Slide in={clicked} mountOnEnter unmountOnExit>
+          <Box> 
+            <Options />
+          </Box>
+        </Slide> 
+        </Box>
         
-      </Box>
-      <Slide direction="down" in={clicked} mountOnEnter unmountOnExit>
-            <Box
-              sx={{
-                overflow: 'hidden', // Prevents any overflow issues
-              }}
-            >
-              <Options />
-            </Box>
-        </Slide>      
+      </AppBar>
     </>
   );
 }
