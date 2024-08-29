@@ -29,13 +29,12 @@ Somewhat of a middle-ground between global and specific styles.
 These sections are separated by their top border.*/
 .chunk {
 	padding: 25px 5vw 50px;
-	border-top: solid 1px #303030;
+	/*border-top: solid 1px #303030;*/
 }
 .chunk-no-border {
 	padding: 1.5vh 5vw 4vh;
 }
 
-/* ********** Logo ********** */
 .logo {
 	width: 400px;
 }
