@@ -1,11 +1,11 @@
-/*
+/* 
 This file should be used for any styles that exist within the App,
 but do not exist in their appropriate component style file.
 
 Somewhat of a middle-ground between global and specific styles.
 */
 
-.heading-box{
+/* .heading-box{
 	padding: 0, 5%;
 	display: flex;
 	align-items: flex-start;
@@ -16,26 +16,26 @@ Somewhat of a middle-ground between global and specific styles.
 	color: var(--swin-red);
 	margin-right: 32px;
 	font-size: 4rem;
-}
+} */
 .red-bullet {
 	/* The two values below exist to correctly align the text after
 	the red bullet pseudo element misaligns the text wrapping.*/
-	text-indent: -1em;
-	padding-left: 1em;
+	/* text-indent: -1em;
+	padding-left: 1em; */
 }
 
 /* ********** Sections ********** */
 /* I have been using this class to define a single vertical chunk of the page.
 These sections are separated by their top border.*/
-.chunk {
+/* .chunk {
 	padding: 25px 5vw 50px;
 	border-top: solid 1px #303030;
 }
 .chunk-no-border {
 	padding: 1.5vh 5vw 4vh;
-}
+} */
 
 /* ********** Logo ********** */
-.logo {
+/* .logo {
 	width: 400px;
-}
+} */
