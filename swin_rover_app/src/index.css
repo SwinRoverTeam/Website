@@ -3,26 +3,40 @@ This file should be used for global styles only.
 */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-	font-family: "Inter", sans-serif;
-	line-height: 1.5;
-	font-weight: 200;
-	letter-spacing: 0.005em;
+    --black-color: #111;
+    --white-color: white;
+    --red-color: #DA3838;
+    --grey-color: var(--dark-grey-color);
+    --dark-grey-color: #222;
+    --headline-size: 4em;
+    --title-size: 5.75em;
+    --small-size: 1.25em;
+    --medium-size:2em;
+}
 
-	color: rgba(255, 255, 255, 1);
-	background-color: #111111;
+html {
+    scroll-behavior: smooth;
+}
 
-	--swin-red: #da3838;
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: 'Inter', sans-serif;
+    font-weight:300;
 }
 
 /* ********** Font Variations ********** */
-.inter-paragraph {
+/* .inter-paragraph {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 200;
@@ -65,4 +79,4 @@ h3 {
 
 p {
 	margin-bottom: 0.5em;
-}
+} */
