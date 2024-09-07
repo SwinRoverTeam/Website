@@ -98,17 +98,18 @@ h1 {
 
 .round-button {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: var(--small-size);
     font-weight: 400;
     color: var(--black-color);
     display: inline-block;
-    padding: 3vh 4vw;
-    background: var(--white-color);
+    padding: 6.5vh 11vw;
+    background: var(--black-color);
     border-radius: 1000px;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    border: solid 1px grey;
 }
 
 .round-button .button-info {
@@ -169,7 +170,7 @@ h1 {
 }
 
 .button-text-container p:nth-child(2) {
-    color: var(--white-color);
+    color: var(--black-color);
 }
 
 .round-button:hover >  .button-info p {
@@ -270,12 +271,13 @@ h1 {
     border-radius: 20px;
     height: 150px;
     width: 525px;
-    padding-bottom: 1.5%;
+
     border: 1px solid grey;
     display: flex;
     justify-content: space-between; 
     /* Spread items evenly across the container */
     align-items: center;
+    flex-direction: column;
 
 
 
@@ -284,16 +286,21 @@ h1 {
 #text {
 
     position: absolute;
+
     padding-top: 80px;
     display: flex;
     vertical-align: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10%;
+    
+    flex-direction: column;
+    
     
 }
 
-#picture { 
+#picture {
+    padding-top: 25px;
     position: relative;
     display: flex;
     vertical-align: center;
