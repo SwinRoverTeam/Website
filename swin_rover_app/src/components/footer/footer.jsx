@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import './footer.css'
 import dotMatrix from '../../assets/test_dot_matrix.png'
 import SRTLogo from '../../assets/srt-logo.svg'
+import RedBulletText from '../redBulletText/redBulletText'
 
 
 function Footer () {
@@ -42,15 +43,19 @@ function Banner () {
 		<Stack
 			direction={{ xs: 'column', md: 'row'}}
 			alignItems='center'
-			className='heading-box chunk-no-border'
+			className='heading-box chunk'
 			spacing={8}
 		>
 
 			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo'/>
 			<Box display={{ xs: 'none', md: 'block' }}>
-				<h2 className='red-bullet'>
+				{/* <h2 className='red-bullet'>
 					Let's push the boundaries of what we can achieve together.
-				</h2>
+				</h2> */}
+				<RedBulletText
+					text="Let's push the boundaries of what we can achieve together."
+					fontClassName='inter-h2'
+				/>
 			</Box>
 		</Stack>
 	);
