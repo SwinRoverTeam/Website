@@ -11,7 +11,7 @@ This file should be used for global styles only.
 
 :root {
 	font-family: "Inter", sans-serif;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-weight: 200;
 	letter-spacing: 0.005em;
 
@@ -34,8 +34,14 @@ This file should be used for global styles only.
 	font-optical-sizing: auto;
 	font-weight: 200;
 	font-style: normal;
-	font-size: 2em;
 	font-size: 1.2em;
+}
+.inter-h2 {
+	font-family: "Inter", sans-serif;
+	font-size: 3.5em;
+	font-weight: 200;
+	line-height: 1.1;
+	text-align: left;
 }
 
 
@@ -51,8 +57,15 @@ body {
 	min-height: 100vh;
 }
 
+h1 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	line-height: 1.1;
+	text-align: left;
+}
+
 h2 {
-	font-size: 4em;
+	font-size: 3.5em;
 	font-weight: 200;
 	line-height: 1.1;
 	text-align: left;
@@ -65,4 +78,5 @@ h3 {
 
 p {
 	margin-bottom: 0.5em;
+	font-size: 1.5rem;
 }
