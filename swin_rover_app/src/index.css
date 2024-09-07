@@ -35,6 +35,21 @@ body {
     font-weight:300;
 }
 
+@media (pointer:none), (pointer:coarse) {
+    .dot-lattice {
+        display:none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    :root {
+        --headline-size: 2.5em;
+        --title-size: 3em;
+        --small-size: 1em;
+        --medium-size:1.5em;
+    }
+}
+
 /* ********** Font Variations ********** */
 /* .inter-paragraph {
 	font-family: "Inter", sans-serif;
