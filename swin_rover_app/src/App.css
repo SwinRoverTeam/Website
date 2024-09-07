@@ -11,23 +11,28 @@ Somewhat of a middle-ground between global and specific styles.
 	align-items: flex-start;
 	}
 
-.red-bullet::before {
+/* .red-bullet::before {
 	content: '•';
 	color: var(--swin-red);
 	margin-right: 32px;
-	font-size: 4rem;
+	font-size: 2rem;
 }
 .red-bullet {
 	/* The two values below exist to correctly align the text after
-	the red bullet pseudo element misaligns the text wrapping.*/
+	the red bullet pseudo element misaligns the text wrapping.
 	text-indent: -1em;
 	padding-left: 1em;
-}
+} */
+
 
 /* ********** Sections ********** */
-/* I have been using this class to define a single vertical chunk of the page.
-These sections are separated by their top border.*/
+/* I have been using this class to define a single vertical 'chunk' of the page.
+These 'chunks' are separated by their top border. */
 .chunk {
+	/*
+	This padding needs to be the same as the padding in chunk-no-border.
+	We should figure out which is the one we should be using.
+	*/
 	padding: 25px 5vw 50px;
 	border-top: solid 1px #303030;
 }
@@ -35,7 +40,18 @@ These sections are separated by their top border.*/
 	padding: 1.5vh 5vw 4vh;
 }
 
+.width-90 {
+	max-width: 90%;
+}
+
 /* ********** Logo ********** */
 .logo {
 	width: 400px;
+
+}
+
+.title {
+	font-size: 5rem;
+	line-height: 5.4rem;
+	font-weight: 250;
 }
