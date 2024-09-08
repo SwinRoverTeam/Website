@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 This file should be used for global styles only.
 */
@@ -66,3 +67,87 @@ h3 {
 p {
 	margin-bottom: 0.5em;
 }*/
+=======
+/*
+This file should be used for global styles only.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #111;
+    --white-color: white;
+    --red-color: #DA3838;
+    --grey-color: var(--dark-grey-color);
+    --dark-grey-color: #222;
+    --headline-size: 4em;
+    --title-size: 5.75em;
+    --small-size: 1.25em;
+    --medium-size:2em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: 'Inter', sans-serif;
+    font-weight:300;
+}
+
+/* ********** Font Variations ********** */
+/* .inter-paragraph {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2em;
+}
+.inter-links {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2em;
+	font-size: 1.2em;
+}
+
+
+a {
+	text-decoration: none;
+	line-height: 1.8em;
+}
+
+body {
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h2 {
+	font-size: 4em;
+	font-weight: 200;
+	line-height: 1.1;
+	text-align: left;
+}
+
+h3 {
+	font-weight: 350;
+	font-size: 1.8rem;
+}
+
+p {
+	margin-bottom: 0.5em;
+} */
+>>>>>>> 5fc027c0e88af46da36f07713cbdd63524fdf0cd
