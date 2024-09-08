@@ -1,21 +1,7 @@
 import './App.css'
-import Navbar from './components/navbar/navbar'
-// import Footer from './components/footer/footer'
-
-// function App() {
-// 	return (
-// 		<>
-// 			<Footer />
-// 		</>
-// 	)
-// }
 
 function App() {
-	return (
-		<>
-			<Navbar />
-		</>
-	)
+	return null;
 }
 
-export default App
+export default App;

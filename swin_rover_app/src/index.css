@@ -50,6 +50,36 @@ body {
     }
 }
 
+h1 {
+    font-weight: 400;
+    font-size: var(--headline-size);
+    line-height:1;
+}
+
+.headline h1 {
+    width:75%;
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size: var(--title-size);
+    line-height:1;
+}
+
+p {
+    letter-spacing: -1px;
+}
+
+.dot {
+    width: 0.75vw;
+    height: 0.75vw;
+    margin-top: 3vh;
+    margin-right: 2vw;
+    border-radius: 100%;
+    background-color: var(--red-color);
+    transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
+}
+
 /* ********** Font Variations ********** */
 /* .inter-paragraph {
 	font-family: "Inter", sans-serif;
