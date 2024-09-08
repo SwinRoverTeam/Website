@@ -5,7 +5,7 @@ import UnderlineButton from '../underlinebutton/underlinebutton';
 import navIconBlack from '../../assets/nav-icon-black.svg'
 import navIconWhite from '../../assets/nav-icon-white.svg'
 import SRTLogo from '../../assets/srt-logo.svg'
-
+import TeamImage from '../../assets/srt-image.jpg'
 let navbar = document.querySelector('.navbar .menu');
 
 function changeText(text) {
