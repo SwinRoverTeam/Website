@@ -35,6 +35,41 @@ body {
     font-weight:300;
 }
 
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+html.lenis {
+    height: auto;
+}
+  
+.lenis.lenis-smooth {
+scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    color: var(--white-color);
+    background: var(--black-color);
+    font-family: 'Inter', sans-serif;
+    font-weight:300;
+}
+
 @media (pointer:none), (pointer:coarse) {
     .dot-lattice {
         display:none;
@@ -79,49 +114,3 @@ p {
     background-color: var(--red-color);
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
 }
-
-/* ********** Font Variations ********** */
-/* .inter-paragraph {
-	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 200;
-	font-style: normal;
-	font-size: 2em;
-}
-.inter-links {
-	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 200;
-	font-style: normal;
-	font-size: 2em;
-	font-size: 1.2em;
-}
-
-
-a {
-	text-decoration: none;
-	line-height: 1.8em;
-}
-
-body {
-	display: flex;
-	place-items: center;
-	min-width: 320px;
-	min-height: 100vh;
-}
-
-h2 {
-	font-size: 4em;
-	font-weight: 200;
-	line-height: 1.1;
-	text-align: left;
-}
-
-h3 {
-	font-weight: 350;
-	font-size: 1.8rem;
-}
-
-p {
-	margin-bottom: 0.5em;
-} */
