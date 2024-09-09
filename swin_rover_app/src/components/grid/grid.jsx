@@ -1,24 +1,20 @@
 import * as React from 'react';
 import './grid.css'
+import LinkRoundButton from '../roundbutton/linkroundbutton';
 
-function Grid({image_url, image_alt, title, subtext, button_url, button_name}) {
+function ProjectsGridCell({image_url, title, subtext, button_url}) {
     return (  
-      <div class="container">
-       
-          <section class="content">
-            <img src={image_url} alt={image_alt}></img>
+      <div className="container">
+            <img src={image_url} alt=""></img>
             <div className="span_text_and_button">
               <div className="text_wrapper">
                 <h3 className="inter-paragraph">{title}</h3>
                 <p className="inter-links">{subtext}</p>
             </div>
-              <a href={button_url} >
-                <button className="inter-links">{button_name}</button>
-              </a>
+              <LinkRoundButton text="View project" />
             </div>
-          </section>
      
     </div>
   );
 }
-  export default Grid;
+  export default ProjectsGridCell;

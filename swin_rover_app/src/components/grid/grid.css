@@ -1,108 +1,59 @@
+/* wrap components on a flex-row */
 .grid {
   display: flex;
-  flex-direction: row; /* Stack components horizontally by default */
-  gap: 20px; /* Optional: Add spacing between GridV4 components */
-  flex-wrap: wrap;
+  gap: 1.5vw;
+  width:100vw;
+  padding:5vh 2.5vw;
+  padding-top:15vh;
 }
 
+/* flex element for the grid */
+
+/* for the image in a grid */
 .container img {
-  height: 1500px;
+  width:100%;
+  height:60vh;
   object-fit: cover;
-  width: 100%;
-}
-/*
-.container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-*/
-
-.content {
-  flex: 1;
-  padding: 50px;
+  border-radius: 1vw;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
-
+.container {
+  width:100%;
 }
 
 .span_text_and_button {
-  padding: 0px 10px 0px;
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 1.25em; /* Optional: Add some space above the row */
+  padding-top:3vh;
 }
 
-.text_wrapper {
-  text-align: left !important;
-  padding: 0px 10px 0px;
+.span_text_and_button h3 {
+  font-size:var(--medium-size);
+  font-weight:400;
 }
 
-/*
-button {
-  background-color: white;
-  border-radius: 2pc;
-  color: mintcream;
-  padding: 10px 20px;
-  text-align: center;
-  transition-duration: 2s;
-  font-weight: bold;
-  border-color:rgba(245, 222, 179, 0.758);
-  color: white;
-	background-image: linear-gradient(-180deg, #677b80 0%, #677b80 100%);
-	box-shadow: 0 0.2rem 1.25rem 0 rgba(209, 195, 187, 0.425),
-							0 -0.25rem 1.5rem rgb(70, 60, 58) inset,
-							0 0.75rem 0.5rem rgba(199, 224, 196, 0.731) inset,
-							0 0.25rem 0.5rem 0 rgb(72, 63, 58) inset;
-
+.span_text_and_button .text_wrapper p {
+  font-size:var(--small-size);
+  font-weight:300;
+  margin-top:0.5vh;
 }
 
-button:hover {
-  color: white;
-	background-image: linear-gradient(-180deg, red 0%, red 100%);
-	box-shadow: 0 0.2rem 1.25rem 0 rgba(223, 230, 9, 0.425),
-							0 -0.25rem 1.5rem rgb(217, 255, 0) inset,
-							0 0.75rem 0.5rem rgba(214, 106, 39, 0.731) inset,
-							0 0.25rem 0.5rem 0 rgb(255, 85, 0) inset;
-}
-*/
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .grid, .main, .span_text_and_button {
+    flex-direction: column;
+  }
 
-button {
-  font-size: 1.25em !important;;
-  font-weight: bold !important;;
-  background:rgb(248, 237, 217);
-  border:none;
-  color: rgb(44, 29, 29);
-  padding: 15px 20px;
-  transition:all .3s ease-out; 
-  box-shadow:inset 0 -8px 0 0 rgba(0, 0, 0, 0.2),
-    1px 1px 0 0 #ff0000,
-    2px 2px 0 0 #ff0000,
-    3px 3px 0 0 #ff0000,
-    4px 4px 0 0 #ff0000,
-    5px 5px 0 0 #ff0000,
-    6px 6px 0 0 #ff0000,
-    7px 7px 0 0 #ff0000,
-    8px 8px 0 0 #ff0000,
-    9px 9px 0 0 #ff0000;
-}
+  .grid {
+    gap:3vh;
+  }
 
-button:hover{
-  color:#444;
-}
+  .span_text_and_button {
+    padding-top:1.5vh;
+    gap:1.5vh;
+  }
 
-button:active{
-  color:#222;
-  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
-    1px 1px 0 0 #ff0000,
-    2px 2px 0 0 #ff0000,
-    3px 3px 0 0 #ff0000,
-    4px 4px 0 0 #ff0000,
-    5px 5px 0 0 #ff0000;
+  .container img {
+    border-radius: 3vw;
+  }
 }
