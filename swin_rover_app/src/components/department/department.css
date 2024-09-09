@@ -1,0 +1,44 @@
+/* wrap components on a flex-row */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px;
+  flex: 1;
+}
+
+.cell:hover{
+  filter: brightness(110%);
+}
+
+/* for the image in a grid */
+.container img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+/* each department and its description is a cell*/
+.cell {
+  background-color: rgb(34, 34, 34);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* span text vertically*/
+.bottom-align {
+  border-top-style: solid;
+  border-top-width: 0.1vh;
+  vertical-align: bottom;
+  display: table-cell;
+  height: 500px;
+}
