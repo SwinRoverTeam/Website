@@ -1,36 +1,37 @@
+/* wrap components on a flex-row */
 .grid {
   display: flex;
-  flex-direction: row; /* Stack components horizontally by default */
-  gap: 20px; /* Optional: Add spacing between GridV4 components */
+  flex-direction: row;
+  gap: 30px;
   flex-wrap: wrap;
+  padding: 30px;
+  filter: brightness(100%);
 }
 
-.container img {
-  height: 1500px;
-  object-fit: cover;
-  width: 100%;
+.container:hover{
+  filter: brightness(110%);
 }
-/*
-.container img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-*/
 
-.content {
+/* flex element for the grid */ 
+.container {;
   flex: 1;
-  padding: 50px;
+}
+
+/* for the image in a grid */
+.container img {
+  height: 1000px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .main {
     flex-direction: column;
   }
-
 }
 
+/* for the text in a grid */
 .span_text_and_button {
   padding: 0px 10px 0px;
   display: flex;
@@ -39,40 +40,13 @@
   margin-top: 1.25em; /* Optional: Add some space above the row */
 }
 
+/* for the alignment of text and button */
 .text_wrapper {
   text-align: left !important;
   padding: 0px 10px 0px;
 }
 
-/*
-button {
-  background-color: white;
-  border-radius: 2pc;
-  color: mintcream;
-  padding: 10px 20px;
-  text-align: center;
-  transition-duration: 2s;
-  font-weight: bold;
-  border-color:rgba(245, 222, 179, 0.758);
-  color: white;
-	background-image: linear-gradient(-180deg, #677b80 0%, #677b80 100%);
-	box-shadow: 0 0.2rem 1.25rem 0 rgba(209, 195, 187, 0.425),
-							0 -0.25rem 1.5rem rgb(70, 60, 58) inset,
-							0 0.75rem 0.5rem rgba(199, 224, 196, 0.731) inset,
-							0 0.25rem 0.5rem 0 rgb(72, 63, 58) inset;
-
-}
-
-button:hover {
-  color: white;
-	background-image: linear-gradient(-180deg, red 0%, red 100%);
-	box-shadow: 0 0.2rem 1.25rem 0 rgba(223, 230, 9, 0.425),
-							0 -0.25rem 1.5rem rgb(217, 255, 0) inset,
-							0 0.75rem 0.5rem rgba(214, 106, 39, 0.731) inset,
-							0 0.25rem 0.5rem 0 rgb(255, 85, 0) inset;
-}
-*/
-
+/* buton design */
 button {
   font-size: 1.25em !important;;
   font-weight: bold !important;;
@@ -93,10 +67,6 @@ button {
     9px 9px 0 0 #ff0000;
 }
 
-button:hover{
-  color:#444;
-}
-
 button:active{
   color:#222;
   box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
@@ -105,4 +75,8 @@ button:active{
     3px 3px 0 0 #ff0000,
     4px 4px 0 0 #ff0000,
     5px 5px 0 0 #ff0000;
+}
+
+.grid:hover{
+  brightness: 100%;
 }
