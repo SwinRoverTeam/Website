@@ -7,7 +7,7 @@
 }
 .red-bullet-inner span {
 	font-size: 2rem;
-	color: var(--swin-red);
+	color: var(--red-color);
     margin-top: -2em;
 }
 .red-bullet-text {

@@ -1,0 +1,20 @@
+.chunk {
+    padding: 1.5vh 5vw 4vh;
+    border-top: 1px solid #303030;
+}
+.chunk-no-border {
+    padding: 1.5vh 5vw 4vh;
+}
+.width-90 {
+    max-width: 90%;
+}
+.logo {
+    width: 400px;
+}
+.headline {
+    font-size: var(--headline-size);
+}
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
