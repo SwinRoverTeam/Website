@@ -6,6 +6,7 @@ import dotMatrix from '../../assets/test_dot_matrix.png'
 import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
+import UnderlineButton from '../underlinebutton/underlinebutton'
 
 
 function Footer () {
@@ -89,11 +90,25 @@ function WebLinks () {
 			className='links'
 		>
 			<h3>Website</h3>
-			<a href='#' className='inter-links'>Home</a>
-			<a href='#' className='inter-links'>About</a>
+			<UnderlineButton
+				text='Home'
+			/>
+			<UnderlineButton
+				text='About'
+			/>
+			<UnderlineButton
+				text='Team'
+			/>
+			<UnderlineButton
+				text='Projects'
+			/>
+			<UnderlineButton
+				text='Sponsors'
+			/>
+			{/* <a href='#' className='inter-links'>About</a>
 			<a href='#' className='inter-links'>Team</a>
 			<a href='#' className='inter-links'>Projects</a>
-			<a href='#' className='inter-links'>Sponsors</a>
+			<a href='#' className='inter-links'>Sponsors</a> */}
 		</Stack>
 	);
 };
@@ -107,8 +122,12 @@ function SocialLinks () {
 			className='links'
 		>
 			<h3>Social</h3>
-			<a href='#' className='inter-links'>Instagram</a>
-			<a href='#' className='inter-links'>LinkedIn</a>
+			<UnderlineButton
+				text='LinkedIn'
+			/>
+			<UnderlineButton
+				text='Instagram'
+			/>
 		</Stack>
 	);
 };
@@ -122,10 +141,18 @@ function ContactLinks () {
 			className='links'
 		>
 			<h3>Contact</h3>
-			<a href='#' className='inter-links'>Contact</a>
-			<a href='#' className='inter-links'>Join team</a>
-			<a href='#' className='inter-links'>Sponsor</a>
-			<a href='#' className='inter-links'>Email</a>
+			<UnderlineButton
+				text='Contact'
+			/>
+			<UnderlineButton
+				text='Join team'
+			/>
+			<UnderlineButton
+				text='Sponsor'
+			/>
+			<UnderlineButton
+				text='Email'
+			/>
 		</Stack>
 	);
 };

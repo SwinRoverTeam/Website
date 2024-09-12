@@ -1,1 +1,18 @@
 /* ********** Home Page Styles ********** */
+
+.title {
+    font-size: var(--title-size);
+    width: 90%;
+}
+.headline {
+    font-size: var(--headline-size);
+}
+.mediumtext {
+    font-size: var(--medium-size);
+}
+.smalltext {
+    font-size: var(--small-size);
+}
+.width-100 {
+    width: 100%;
+}

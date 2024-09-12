@@ -1,13 +1,16 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container'
-import Grid2 from '@mui/material/Grid2'
-import SRTLogo from '../../assets/srt-logo.svg'
-import Footer from '../../components/footer/footer'
-import RedBulletText from '../../components/redBulletText/redBulletText'
+import Container from '@mui/material/Container';
+import Grid2 from '@mui/material/Grid2';
+import SRTLogo from '../../assets/srt-logo.svg';
+import Footer from '../../components/footer/footer';
+import RedBulletText from '../../components/redBulletText/redBulletText';
+import HeroSlideshow from '../../components/heroslideshow/heroslideshow';
+import LinkRoundButton from '../../components/roundbutton/linkroundbutton';
 import '../../App.css'
 import '../../index.css'
+import './home.css'
 
 function Home() {
     return (
@@ -18,7 +21,7 @@ function Home() {
                 className='chunk-no-border'
                 direction='row'
             >
-                <p className='title  width-90'>We're creating the next generation of space innovators</p>
+                <p className='title'>We're creating the next generation of space innovators</p>
                 {/* *** INSERT DOT MATRIX HERE *** */}
             </Stack>
             <Grid2 
@@ -31,14 +34,14 @@ function Home() {
                         {/* <h1 className='red-bullet'>Welcome to the Swinburne Rover Team</h1> */}
                         <RedBulletText
                             text="Welcome to the Swinburne Rover Team"
-                            textSize="1.5rem"
+                            fontClassName="medium-text"
                         />
                     </Grid2>
                     <Grid2 size={3}>
-                        <p>Grid spot 2 (Slideshow)</p>
+                        <HeroSlideshow />
                     </Grid2>
                     <Grid2 size={3}>
-                        <p>Grid spot 3 (Image)</p>
+                        <p>Grid spot 3 (Video)</p>
                     </Grid2>
             </Grid2>
             <Stack
@@ -48,7 +51,7 @@ function Home() {
                 <RedBulletText
                     text="We're a diverse and dedicated team of students united 
                     by a shared passion for innovation and exploration"
-                    fontClassName='inter-h2'
+                    fontClassName='headline'
                 />
                 {/* *** INSERT DOT MATRIX HERE *** */}
             </Stack>
@@ -58,9 +61,12 @@ function Home() {
                 spacing={2}
                 sx={{justifyContent: 'space-evenly'}}
             >
-                <button>the width of this button should be wider</button>
+                <LinkRoundButton
+                    text='Learn more about our vision, mission and team values'
+                    style='width=100%;'
+                />
                 <Box>
-                    <p>
+                    <p className='medium-text'>
                         We compete in prestigious competitions like the Australian Rover Challenge 
                         and the University Rover Challenge, where  design, build, and operate 
                         cutting-edge robotic rovers.
