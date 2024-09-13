@@ -1,24 +1,23 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import Grid2 from '@mui/material/Grid2';
-import SRTLogo from '../../assets/srt-logo.svg';
 import Footer from '../../components/footer/footer';
 import RedBulletText from '../../components/redBulletText/redBulletText';
 import HeroSlideshow from '../../components/heroslideshow/heroslideshow';
 import LinkRoundButton from '../../components/roundbutton/linkroundbutton';
-import '../../App.css'
-import '../../index.css'
-import './home.css'
+import Navbar from '../../components/navbar/navbar';
+import ProjectsSlideshow from '../../components/projectsslideshow/projectsslideshow';
+import '../../App.css';
+import '../../index.css';
+import './home.css';
 
 function Home() {
     return (
         <>
-            {/* *** PLEASE IMPORT HEADER *** */} 
-            {/* <Header /> */}
+            <Navbar />
             <Stack
-                className='chunk-no-border'
+                className='chunk-no-border top-element'
                 direction='row'
             >
                 <p className='title'>We're creating the next generation of space innovators</p>
@@ -57,29 +56,42 @@ function Home() {
                 />
                 {/* *** INSERT DOT MATRIX HERE *** */}
             </Stack>
-            <Stack
+            <Grid2
                 className='chunk'
-                direction='row'
+                container
                 spacing={2}
                 sx={{justifyContent: 'space-evenly'}}
             >
-                <LinkRoundButton
-                    text='Learn more about our vision, mission and team values'
+                <Grid2
+                    size={6}
+                >
+                    <div className='centre-content'>
+                        <LinkRoundButton
+                            text='Learn more about our vision, mission and team values'
+                            style={{}}
+                        />
+                    </div>
                     
-                />
-                <Box>
-                    <p className='medium-text'>
-                        We compete in prestigious competitions like the Australian Rover Challenge 
-                        and the University Rover Challenge, where  design, build, and operate 
-                        cutting-edge robotic rovers.
-                    <p>
-                    </p>
-                        Our mission is to design and build a competitive rover while fostering a 
-                        supportive environment where every team member can learn, contribute, 
-                        and thrive.
-                    </p>
-                </Box>
-            </Stack>
+                </Grid2>
+                <Grid2
+                    size={6}
+                >
+                    <Box>
+                        <p className='medium-text'>
+                            We compete in prestigious competitions like the Australian Rover Challenge 
+                            and the University Rover Challenge, where  design, build, and operate 
+                            cutting-edge robotic rovers.
+                        </p>
+                        <br/>
+                        <p className='medium-text'>
+                            Our mission is to design and build a competitive rover while fostering a 
+                            supportive environment where every team member can learn, contribute, 
+                            and thrive.
+                        </p>
+                    </Box>
+                </Grid2>
+                
+            </Grid2>
             <Grid2
                 container
                 spacing={2}
@@ -103,19 +115,24 @@ function Home() {
             <Box className='chunk'>
                 <p className='title'>Projects</p>
                 <RedBulletText
-                    fontClassName='inter-h2'
+                    fontClassName='headline'
                     text='We strive for best practices, taking inspiration
                     from NASA handbooks to ensure high standards'
                 ></RedBulletText>
             </Box>
-            <Box className='chunk'>Rudra add your projects slideshow here</Box>
             <Box className='chunk'>
-            <RedBulletText
-                    fontClassName='inter-h2'
+                <ProjectsSlideshow />
+            </Box>
+            <Stack
+                className='chunk'
+            >
+                <RedBulletText
+                    fontClassName='headline'
                     text='The Swinburne Rover Team operates with the core values 
                     of innovation, collaboration and diversity'
-                ></RedBulletText>
-            </Box>
+                />
+
+            </Stack>
             <Stack
                 className='chunk'
                 direction='row'
@@ -124,12 +141,56 @@ function Home() {
                 <Stack
                     direction='column'
                     spacing={2}
+                    justifyContent='space-between'
                 >
-                    <p>Some text here about membership</p>
-                    <button>button 1</button>
-                    <button>button 2</button>
+                    <p className='small-text'>Some text here about member benefits, etc, and why anyone should join.</p>
+                    <Stack
+                        spacing={1.6}
+                    >
+                        <LinkRoundButton
+                            text='Sponsor us'
+                        />
+                        <LinkRoundButton
+                            text='Join the team'
+                        />
+                    </Stack>
                 </Stack>
-                <Box>Big links box</Box>
+                <Stack
+                    direction='row'
+                    spacing={-0.15}
+                    className='social-links-box'
+                >
+                    <Stack
+                        className='social-links-box-inner left'
+                        direction='column'
+                        justifyContent='space-between'
+                        alignItems='center'
+                    >
+                        <div></div>
+                        <p>lil box</p>
+                        <p>Instagram</p>
+                    </Stack>
+                    <Stack
+                        className='social-links-box-inner'
+                        direction='column'
+                        justifyContent='space-between'
+                        alignItems='center'
+                    >
+                        <div></div>
+                        <p>lil box</p>
+                        <p>LinkedIn</p>
+                    </Stack>
+                    <Stack
+                        className='social-links-box-inner right'
+                        direction='column'
+                        justifyContent='space-between'
+                        alignItems='center'
+                    >
+                        <div></div>
+                        <p>lil box</p>
+                        <p>Email</p>
+                    </Stack>
+                </Stack>
             </Stack>
             <Footer />
         </>
