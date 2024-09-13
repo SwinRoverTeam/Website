@@ -5,7 +5,6 @@ import './footer.css'
 import dotMatrix from '../../assets/test_dot_matrix.png'
 import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
-import '../../index.css'
 
 
 function Footer () {
@@ -55,7 +54,7 @@ function Banner () {
 				</h2> */}
 				<RedBulletText
 					text="Let's push the boundaries of what we can achieve together."
-					fontClassName="headline"
+					textSize="var(--headline-size)"
 				/>
 			</Box>
 		</Stack>

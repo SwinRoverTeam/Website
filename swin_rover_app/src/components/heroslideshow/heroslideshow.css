@@ -75,3 +75,12 @@
     background-position:50% 50%;
     background-repeat:no-repeat;
 }
+
+.slideshow {
+    width: 40vw;
+    height: 50vh;
+    background: var(--dark-grey-color);
+    border-radius: 1.5vw;
+    position: relative;
+    overflow: hidden;
+}
