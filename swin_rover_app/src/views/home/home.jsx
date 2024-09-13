@@ -37,7 +37,9 @@ function Home() {
                             fontClassName="medium-text"
                         />
                     </Grid2>
-                    <Grid2 size={3}>
+                    <Grid2 size={3}
+                        className='relative'
+                    >
                         <HeroSlideshow />
                     </Grid2>
                     <Grid2 size={3}>
@@ -63,7 +65,7 @@ function Home() {
             >
                 <LinkRoundButton
                     text='Learn more about our vision, mission and team values'
-                    style='width=100%;'
+                    
                 />
                 <Box>
                     <p className='medium-text'>

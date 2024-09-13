@@ -16,3 +16,7 @@
 .width-100 {
     width: 100%;
 }
+.relative {
+    position: relative;
+    height: 45vh;
+}
