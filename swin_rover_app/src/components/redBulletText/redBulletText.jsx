@@ -10,7 +10,7 @@ function RedBulletText({text, textSize = '', fontClassName=''}) {
     return(
         <div className={`red-bullet-outer ${fontClassName}`} style={{fontSize: textSize}}>
             <span className='red-bullet-inner'>
-                <span>&#8226;</span>
+                <p>&#8226;</p>
             </span>
             <span className='red-bullet-text'>{text}</span>
         </div>
