@@ -1,7 +1,12 @@
 import './App.css'
+import About from './components/aboutusgrid/AboutUsGrid';
 
 function App() {
-	return null;
+	return (
+		<>
+			<About/>
+		</>
+	)
 }
 
 export default App;
