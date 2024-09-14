@@ -8,9 +8,14 @@ import HeroSlideshow from '../../components/heroslideshow/heroslideshow';
 import LinkRoundButton from '../../components/roundbutton/linkroundbutton';
 import Navbar from '../../components/navbar/navbar';
 import ProjectsSlideshow from '../../components/projectsslideshow/projectsslideshow';
+import UnderlineButton from '../../components/underlinebutton/underlinebutton';
+import instagamIcon from '../../assets/instagram-icon-white.svg'
+import linkedinIcon from '../../assets/linkedin-icon-white.svg'
+import emailIcon from '../../assets/email-icon-white.svg'
 import '../../App.css';
 import '../../index.css';
 import './home.css';
+
 
 function Home() {
     return (
@@ -30,11 +35,16 @@ function Home() {
                 className='chunk'
                 >
                     <Grid2 size={2}>
-                        {/* <h1 className='red-bullet'>Welcome to the Swinburne Rover Team</h1> */}
+                        <Stack
+                            justifyContent='space-between'
+                            height='100%'
+                        >
                         <RedBulletText
                             text="Welcome to the Swinburne Rover Team"
                             fontClassName="medium-text"
                         />
+                        <p className='medium-text' style={{ color: 'var(--dark-grey-color)', textDecoration: 'underline' }}>Scroll Down</p>
+                        </Stack>
                     </Grid2>
                     <Grid2 size={3}
                         className='relative'
@@ -120,9 +130,9 @@ function Home() {
                     from NASA handbooks to ensure high standards'
                 ></RedBulletText>
             </Box>
-            <Box className='chunk'>
-                <ProjectsSlideshow />
-            </Box>
+            
+            <ProjectsSlideshow />
+            
             <Stack
                 className='chunk'
             >
@@ -167,8 +177,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div></div>
-                        <p>lil box</p>
-                        <p>Instagram</p>
+                        <a href="#">
+                            <img src={instagamIcon} alt="Instagram Icon" />
+                        </a>
+                        <UnderlineButton text='Instagram'/>
                     </Stack>
                     <Stack
                         className='social-links-box-inner'
@@ -177,8 +189,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div></div>
-                        <p>lil box</p>
-                        <p>LinkedIn</p>
+                        <a href="#">
+                            <img src={linkedinIcon} alt="LinkedIn Icon" />
+                        </a>
+                        <UnderlineButton text='LinkedIn'/>
                     </Stack>
                     <Stack
                         className='social-links-box-inner right'
@@ -187,8 +201,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div></div>
-                        <p>lil box</p>
-                        <p>Email</p>
+                        <a href="#">
+                            <img src={emailIcon} alt="Email Icon" />
+                        </a>
+                        <UnderlineButton text='Email'/>
                     </Stack>
                 </Stack>
             </Stack>

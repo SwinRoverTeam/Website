@@ -14,6 +14,14 @@
 .small-text {
     font-size: var(--small-size);
 }
+.chunk {
+    padding: 1.5vh 5vw 4vh;
+    border-top: 1px solid #303030;
+}
+.chunk-no-border {
+    padding: 1.5vh 5vw 4vh;
+}
+
 .top-element {
     margin-top: 10vh;
 }
