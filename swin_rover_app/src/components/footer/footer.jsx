@@ -7,6 +7,7 @@ import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'
+import DotLattice from '../dotlattice/dotlattice';
 
 
 function Footer () {
@@ -21,16 +22,16 @@ function Footer () {
 				<Respects />
 				<Stack
 					direction='row'
-					spacing={{ xs: 0, md: 10 }}
+					spacing={{ xs: 0, md: 15 }}
 					justifyContent={{ xs: 'space-evenly', lg: 'none'}}
+					className="links-container"
 				>
 					<WebLinks />
 					<SocialLinks />
 					<ContactLinks />
 				</Stack>
 				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
-					<img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
-					{/* Image source: https://clipground.com/dot-pattern-png.html */}
+					<DotLattice />
 				</Box>
 			</Stack>
 			<Policies />
@@ -68,7 +69,7 @@ function Respects () {
 		<Stack
 			direction='column'
 			justifyContent='flex-start'
-			className='inter-paragraph'
+			className='inter-paragraph acknowledgements'
 		>
 			<p>
 				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, 
