@@ -1,0 +1,22 @@
+.tile {
+    background: var(--grey-color);
+    border-radius:100%;
+    box-sizing: border-box;
+    margin:7.5px;
+    width:5px;
+    height: 5px;
+    transition:transform 0.3s ease;
+}
+
+.dot-lattice {
+    height:20vh;
+    width:25%;
+}
+
+.dot-effect-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), 1fr);
+}

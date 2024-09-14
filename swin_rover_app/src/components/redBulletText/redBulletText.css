@@ -1,6 +1,7 @@
 .red-bullet-outer {
 	display: flex;
 	flex-wrap: nowrap;
+    align-items: center;
 }
 .red-bullet-inner {
     width: 0.5em;
@@ -8,8 +9,9 @@
 .red-bullet-inner span {
 	font-size: 2rem;
 	color: var(--red-color);
-  margin-top: -2em;
+    margin-top: -2em;
 }
 .red-bullet-text {
     margin-left: 1rem;
     margin-top: 0.2em;
+}

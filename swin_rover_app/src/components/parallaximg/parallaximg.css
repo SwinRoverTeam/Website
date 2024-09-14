@@ -1,0 +1,16 @@
+.parallax-img {
+    width:95%;
+    margin-left:2.5vw;
+    margin-top:3vh;
+    padding:5vh 3vw;
+    height:70vh;
+    background:url('../../assets/exploration-img.jpg');
+    background-position:50% 50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:1.5vw;
+}
+
+body {
+    height:200vh;
+}
