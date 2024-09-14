@@ -1,2 +1,50 @@
 /* ********** Home Page Styles ********** */
 
+.title {
+    font-size: var(--title-size);
+    width: 90%;
+    margin-bottom: 4vh;
+}
+.headline {
+    font-size: var(--headline-size);
+}
+.medium-text {
+    font-size: var(--medium-size);
+}
+.small-text {
+    font-size: var(--small-size);
+}
+.top-element {
+    margin-top: 10vh;
+}
+.width-100 {
+    width: 100%;
+}
+.relative {
+    position: relative;
+    height: 45vh;
+}
+.centre-content {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.social-links-box {
+    height: 40vh;
+    width: 100%;
+}
+.social-links-box-inner {
+    width: 100%;
+    border: 1px solid #303030;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links-box-inner.left {
+    border-radius: 3em 0 0 3em;
+}
+.social-links-box-inner.right {
+    border-radius: 0 3em 3em 0;
+}
