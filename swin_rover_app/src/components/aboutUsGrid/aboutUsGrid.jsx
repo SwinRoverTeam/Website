@@ -69,8 +69,8 @@ export default function About(){
                                             { id: 'chassis', value: 9, color: '#DA3838', label: 'Chassis'},
                                             { id: 'ecs', value: 6, color: '#414FE8', label: 'ECS'},
                                             { id: 'logic', value: 9, color: '#D9B638', label: 'Logic'},
-                                            { id: 'social media', value: 7, label: 'Social Media'},
-                                            { id: 'finance', value: 6, label: 'Finance'}
+                                            { id: 'social media', value: 7, color: '#aa4db2', label: 'Social Media'},
+                                            { id: 'finance', value: 6, color:'#25b7da', label: 'Finance'}
                                         ],
                                     },
                                 ]}
@@ -94,31 +94,31 @@ export default function About(){
                             fontSize={20}
                             >
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center'}}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#111111', marginRight: '5px'}}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#111111', marginRight: '20px'}}></div>
                                 Science
                             </div>
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#DDDDDD', marginRight: '5px' }}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#DDDDDD', marginRight: '20px' }}></div>
                                 Arm
                             </div>
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#DA3838', marginRight: '5px' }}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#DA3838', marginRight: '20px' }}></div>
                                 Chassis
                             </div>
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#414FE8', marginRight: '5px' }}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#414FE8', marginRight: '20px' }}></div>
                                 ECS
                             </div>
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#D9B638', marginRight: '5px' }}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#D9B638', marginRight: '20px' }}></div>
                                 Logic
                             </div>
-                            <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#CCCCCC', marginRight: '5px' }}></div>
+                            <div style={{ margin: '5px', display: 'flex', alignItems: 'right' }}>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#aa4db2', marginRight: '20px' }}></div>
                                 Social Media
                             </div>
                             <div style={{ margin: '5px', display: 'flex', alignItems: 'center' }}>
-                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#AAAAAA', marginRight: '5px' }}></div>
+                                <div style={{ borderRadius: 5, width: '30px', height: '30px', backgroundColor: '#25b7da', marginRight: '20px' }}></div>
                                 Finance
                             </div>
                         </Grid>
