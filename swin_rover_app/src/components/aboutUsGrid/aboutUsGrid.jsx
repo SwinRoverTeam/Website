@@ -4,7 +4,6 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import Grid from '@mui/material/Grid2';
 import Button from '../roundbutton/roundbutton';
 import Image from '../../assets/Rectangle 17.png';
-import { positions } from '@mui/system';
 
 export default function About(){
     return(
@@ -125,7 +124,6 @@ export default function About(){
                     </Box>
                 </Grid> 
             </Grid>
-            
         </>
     )
 }
