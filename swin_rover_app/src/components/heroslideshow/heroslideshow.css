@@ -76,6 +76,10 @@
     background-repeat:no-repeat;
 }
 
+.slideshow .controls a.round-button:hover {
+    cursor: pointer;
+}
+
 .slideshow {
     width: 40vw;
     height: 50vh;

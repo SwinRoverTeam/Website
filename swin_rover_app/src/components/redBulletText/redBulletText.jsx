@@ -1,5 +1,3 @@
-{/* This is the component to create a red bullet point with any text */}
-
 import * as React from 'react';
 import './redBulletText.css';
 
@@ -8,14 +6,13 @@ import './redBulletText.css';
 // prop will override the font-size property in your fontClassName class.
 function RedBulletText({text, textSize = '', fontClassName=''}) {
     return(
-        <div className={`red-bullet-outer ${fontClassName}`}>
+        <div className={`red-bullet-outer ${fontClassName}`} style={{fontSize: textSize}}>
             <span className='red-bullet-inner'>
-                <span>&#8226;</span>
+                <p>&#8226;</p>
             </span>
-            <p className='red-bullet-text' style={{fontSize: textSize}}>{text}</p>
+            <span className='red-bullet-text'>{text}</span>
         </div>
     );
 };
 
 export default RedBulletText;
-
