@@ -166,5 +166,4 @@ function Policies () {
 		</Stack>
 	);
 }
-
 export default Footer;

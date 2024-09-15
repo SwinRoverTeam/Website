@@ -70,8 +70,8 @@ function HeroSlideshow() {
                 <div className="image"></div>
             </div>
             <div className="controls">
-                <LeftRoundButton text="Previous photo" onClick={previousImage}/>
-                <RightRoundButton text="Next photo" onclick={nextImage} />
+                <LeftRoundButton text="Previous photo" click_func={previousImage}/>
+                <RightRoundButton text="Next photo" click_func={nextImage} />
             </div>
         </div>
     );

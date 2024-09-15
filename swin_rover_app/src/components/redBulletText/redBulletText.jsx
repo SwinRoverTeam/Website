@@ -1,5 +1,3 @@
-{/* This is the component to create a red bullet point with any text */}
-
 import * as React from 'react';
 import './redBulletText.css';
 
