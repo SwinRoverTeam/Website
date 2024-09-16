@@ -3,8 +3,7 @@
   display: flex;
   gap: 1.5vw;
   width:100vw;
-  padding:5vh 2.5vw;
-  padding-top:15vh;
+  padding:10vh 2.5vw;
 }
 
 /* flex element for the grid */
@@ -45,7 +44,8 @@
   }
 
   .grid {
-    gap:3vh;
+    gap:5vh;
+    padding: 5vh 2.5vw;
   }
 
   .span_text_and_button {

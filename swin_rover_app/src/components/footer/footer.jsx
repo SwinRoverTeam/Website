@@ -7,6 +7,7 @@ import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'
+import DotLattice from '../dotlattice/dotlattice';
 
 
 function Footer () {
@@ -21,16 +22,16 @@ function Footer () {
 				<Respects />
 				<Stack
 					direction='row'
-					spacing={{ xs: 0, md: 10 }}
+					spacing={{ xs: 0, md: 15 }}
 					justifyContent={{ xs: 'space-evenly', lg: 'none'}}
+					className="links-container"
 				>
 					<WebLinks />
 					<SocialLinks />
 					<ContactLinks />
 				</Stack>
 				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
-					<img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
-					{/* Image source: https://clipground.com/dot-pattern-png.html */}
+					<DotLattice />
 				</Box>
 			</Stack>
 			<Policies />
@@ -51,6 +52,9 @@ function Banner () {
 
 			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo'/>
 			<Box display={{ xs: 'none', md: 'block' }}>
+				{/* <h2 className='red-bullet'>
+					Let's push the boundaries of what we can achieve together.
+				</h2> */}
 				<RedBulletText
 					text="Let's push the boundaries of what we can achieve together."
 					fontClassName="headline"
@@ -64,13 +68,14 @@ function Respects () {
 	return (
 		<Stack
 			direction='column'
-			justifyContent='space-between'
+			justifyContent='flex-start'
+			className='inter-paragraph acknowledgements'
 		>
-			<p className='small-text'>
+			<p>
 				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, 
 				the Wurundjeri People of the Kulin Nation.
 			</p>
-			<p className='small-text'>
+			<p>
 				© 2024. All rights reserved. Swinburne Rover Team.
 			</p>
 		</Stack>
@@ -84,24 +89,27 @@ function WebLinks () {
 			justifyContent='flex-start'
 			alignItems='flex-start'
 			className='links'
-			spacing={1}
 		>
-			<p className="medium-text">Website</p>
-			<a href="#">
-				<UnderlineButton text='Home'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='About'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Team'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Projects'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Sponsors'/>
-			</a>
+			<h3>Website</h3>
+			<UnderlineButton
+				text='Home'
+			/>
+			<UnderlineButton
+				text='About'
+			/>
+			<UnderlineButton
+				text='Team'
+			/>
+			<UnderlineButton
+				text='Projects'
+			/>
+			<UnderlineButton
+				text='Sponsors'
+			/>
+			{/* <a href='#' className='inter-links'>About</a>
+			<a href='#' className='inter-links'>Team</a>
+			<a href='#' className='inter-links'>Projects</a>
+			<a href='#' className='inter-links'>Sponsors</a> */}
 		</Stack>
 	);
 };
@@ -113,15 +121,14 @@ function SocialLinks () {
 			justifyContent='flex-start'
 			alignItems='flex-start'
 			className='links'
-			spacing={1}
 		>
-			<p className="medium-text">Social</p>
-			<a href="#">
-				<UnderlineButton text='LinkedIn'/>
-			</a>
-			<a href="">
-				<UnderlineButton text='Instagram'/>
-			</a>
+			<h3>Social</h3>
+			<UnderlineButton
+				text='LinkedIn'
+			/>
+			<UnderlineButton
+				text='Instagram'
+			/>
 		</Stack>
 	);
 };
@@ -133,21 +140,20 @@ function ContactLinks () {
 			justifyContent='flex-start'
 			alignItems='flex-start'
 			className='links'
-			spacing={1}
 		>
-			<p className="medium-text">Contact</p>
-			<a href="#">
-				<UnderlineButton text='Contact'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Join team'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Sponsor'/>
-			</a>
-			<a href="#">
-				<UnderlineButton text='Email'/>
-			</a>
+			<h3>Contact</h3>
+			<UnderlineButton
+				text='Contact'
+			/>
+			<UnderlineButton
+				text='Join team'
+			/>
+			<UnderlineButton
+				text='Sponsor'
+			/>
+			<UnderlineButton
+				text='Email'
+			/>
 		</Stack>
 	);
 };
@@ -166,4 +172,5 @@ function Policies () {
 		</Stack>
 	);
 }
+
 export default Footer;
