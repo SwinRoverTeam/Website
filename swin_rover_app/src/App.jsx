@@ -1,8 +1,14 @@
 import './App.css'
-import Projects from './views/projects/projects'
+import AboutUs from './components/aboutusgrid/AboutUsGrid';
+import Mission from './components/mission/mission';
+import About from './views/about/about';
+
 
 function App() {
-	return <Projects />;
-}
+	return (
+		<>
+			<About/>
+		</>
+	)
 
 export default App;
