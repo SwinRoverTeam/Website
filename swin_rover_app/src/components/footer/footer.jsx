@@ -1,12 +1,13 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import './footer.css'
+import DotLattice from '../dotlattice/dotlattice'
 import dotMatrix from '../../assets/test_dot_matrix.png'
 import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
-import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'
+import './footer.css'
+import '../../index.css'
 
 
 function Footer () {
@@ -28,9 +29,8 @@ function Footer () {
 					<SocialLinks />
 					<ContactLinks />
 				</Stack>
-				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
-					<img src={dotMatrix} alt='Dot Matrix' width='200' height='200'/>
-					{/* Image source: https://clipground.com/dot-pattern-png.html */}
+				<Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+					<DotLattice />
 				</Box>
 			</Stack>
 			<Policies />
