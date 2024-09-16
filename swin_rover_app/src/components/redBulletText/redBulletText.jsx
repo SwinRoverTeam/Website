@@ -18,4 +18,3 @@ function RedBulletText({text, textSize = '', fontClassName=''}) {
 };
 
 export default RedBulletText;
-

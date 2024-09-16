@@ -38,6 +38,7 @@ function createGrid(wrapper_grids) {
   
   let columns = Math.floor(window.innerWidth * 0.20 / size);
   let rows = Math.floor(window.innerHeight * 0.25 / size);
+
   
   wrapper_grids.forEach(wrapper_grid => {
     wrapper_grid.style.setProperty("--columns", columns);
