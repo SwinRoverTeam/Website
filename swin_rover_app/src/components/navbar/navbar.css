@@ -16,6 +16,9 @@
 .navbar > .round-button {
     padding: 1.5vh 1.5vw;
 }
+.navbar > .round-button:hover {
+    cursor: pointer;
+}
 
 .navbar img {
     height:80%;
