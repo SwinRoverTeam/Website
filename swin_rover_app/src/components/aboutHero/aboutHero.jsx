@@ -2,22 +2,25 @@ import Typography from '@mui/material/Typography';
 import { Box, ButtonBase } from '@mui/material';
 import { PieChart } from '@mui/x-charts/PieChart';
 import Grid from '@mui/material/Grid2';
-import RoundButton from '../roundbutton/roundbutton';
-import Image from '../../assets/Rectangle 17.png';
-import DotMatrix from '../../assets/test_dot_matrix.png';
-import { flexbox } from '@mui/system';
+import DotLattice from '../../components/dotlattice/dotlattice';
 import RedBulletText from '../redBulletText/redBulletText';
 
 export default function AboutHero(){
     return(
-        <>
+        <> 
                <Grid container spacing={1}>
-                    <Box display={'flex'} borderBottom={2.5} borderColor={'#222222'} marginBottom={3}>
-                        <Grid size={{md: 9, xs: 12}}>
+                    <Box display={'flex'} borderBottom={2.5} borderColor={'#222222'} justifyContent={'center'} alignItems={'center'} marginBottom={2}>
+                        <Grid size={{md: 8, xs: 12}}>
                             <Box sx={{height: {md:'350px', xs: '500px'}, display: 'flex', alignItems: 'center', paddingX: 2}}>
-                                <Typography sx={{fontSize:'65px'}}>
+                                <Typography sx={{fontSize:'55px'}}>
                                     We’re a multi-disciplinary team centered around one purpose: Space Innovation
                                 </Typography>
+                            </Box>
+                        </Grid>
+                        <Grid display={{md:'flex', xs:'none'}} size={{md: 4}} justifyContent={'center'} alignItems={'center'}>
+                            <Box marginY={6} marginLeft={7}>
+                                <DotLattice/>
+                                <DotLattice/>
                             </Box>
                         </Grid>
                     </Box>
@@ -49,7 +52,7 @@ export default function AboutHero(){
                         </Box>
                     </Grid>
                     <Grid size = {{md: 5, xs: 12}}>
-                        <Box sx={{height: '300px', backgroundColor: '#FFFFFF', borderRadius:'15px', border: 1, display: 'flex'}}>
+                        <Box marginRight={{md: 5}} sx={{height: '300px', backgroundColor: '#FFFFFF', borderRadius:'15px', border: 1, display: 'flex'}}>
                             <Grid size = {{md: 7, sx: 6}} sx={{alignContent:'center'}}>
                                 <Box>
                                     <PieChart

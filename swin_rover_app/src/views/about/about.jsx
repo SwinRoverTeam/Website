@@ -11,6 +11,7 @@ export default function About(){
             <Box marginY={5}>
                 <Hero/>
             </Box>
+            <Mission/>
             <Footer/>
         </>
     )
