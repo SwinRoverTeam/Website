@@ -27,7 +27,7 @@ function Home() {
                 direction='row'
             >
                 <p className='title'>We're creating the next generation of space innovators</p>
-                <Box className='disappear' >
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
                     <DotLattice />
                 </Box>
             </Stack>
@@ -77,7 +77,7 @@ function Home() {
                     by a shared passion for innovation and exploration"
                     fontClassName='headline'
                 />
-                <Box className='disappear' >
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
                     <DotLattice />
                 </Box>
             </Stack>
@@ -149,7 +149,7 @@ function Home() {
                         from NASA handbooks to ensure high standards'
                     />
                 </Stack>
-                <Box className='disappear' >
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
                     <DotLattice />
                 </Box>
             </Stack>
@@ -165,7 +165,7 @@ function Home() {
                     text='The Swinburne Rover Team operates with the core values 
                     of innovation, collaboration and diversity'
                 />
-                <Box className='disappear' >
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
                     <DotLattice />
                 </Box>
             </Stack>
