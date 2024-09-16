@@ -3,14 +3,14 @@ import { Box, ButtonBase } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import RedBulletText from '../redBulletText/redBulletText';
 import Parallaximg from '../parallaximg/parallaximg';
-import RoundButton from '../roundbutton/roundbutton';
+import LinkRoundButton from '../roundbutton/linkroundbutton';
 import ExplorationImg from '../../assets/exploration-img.jpg';
 import RoverImg from '../../assets/DSC06200.png';
 
 export default function Mission(){
     return(
         <>
-            <Grid container spacing={1} borderTop={1} borderBottom={1} borderColor={'#222222'}>
+            <Grid borderTop={1} borderBottom={1} borderColor={'#222222'}>
                 <Box display={'flex'} margin={4}>
                     <RedBulletText textSize='30px' text={'Why?'}></RedBulletText>
                 </Box>
@@ -42,7 +42,7 @@ export default function Mission(){
                 direction={{ xs: 'column-reverse', md: 'row' }}
             >
                 <Grid>
-                    <RoundButton text={'Sponsor us'}/>
+                      <LinkRoundButton text={'Sponsor us'} link={'mailto:swinroverteam@swin.edu.au'}/>  
                 </Grid>
                 <Grid>
                     <Box textAlign={{md: 'right', xs: 'left'}} width={{md: 900, xs: 'auto'}}>

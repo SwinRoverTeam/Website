@@ -8,17 +8,17 @@ import RedBulletText from '../redBulletText/redBulletText';
 export default function AboutHero(){
     return(
         <> 
-               <Grid container spacing={1}>
+               <Grid container spacing={1.5}>
                     <Box display={'flex'} borderBottom={2.5} borderColor={'#222222'} justifyContent={'center'} alignItems={'center'} marginBottom={2}>
                         <Grid size={{md: 8, xs: 12}}>
                             <Box sx={{height: {md:'350px', xs: '500px'}, display: 'flex', alignItems: 'center', paddingX: 2}}>
-                                <Typography sx={{fontSize:'55px'}}>
+                                <Typography sx={{fontSize:'67px', lineHeight: '85px'}}>
                                     We’re a multi-disciplinary team centered around one purpose: Space Innovation
                                 </Typography>
                             </Box>
                         </Grid>
                         <Grid display={{md:'flex', xs:'none'}} size={{md: 4}} justifyContent={'center'} alignItems={'center'}>
-                            <Box marginY={6} marginLeft={7}>
+                            <Box marginY={10} marginLeft={7}>
                                 <DotLattice/>
                                 <DotLattice/>
                             </Box>
@@ -27,7 +27,7 @@ export default function AboutHero(){
                     <Grid size={{md: 3.5, xs: 12}} overflow={'hidden'}>
                         <Box sx={{height: {md: '200px', xs:'100px'}, borderRadius:'15px', paddingX: 4}}>
                             <RedBulletText textSize='30px' text={'About Us'}></RedBulletText> 
-                            <ButtonBase disableRipple 
+                            <ButtonBase 
                             sx={{
                                 textTransform:'capitalize',
                                 textDecoration:'underline',
