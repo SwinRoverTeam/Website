@@ -12,6 +12,7 @@ import UnderlineButton from '../../components/underlinebutton/underlinebutton';
 import instagamIcon from '../../assets/instagram-icon-white.svg'
 import linkedinIcon from '../../assets/linkedin-icon-white.svg'
 import emailIcon from '../../assets/email-icon-white.svg'
+import DotLattice from '../../components/dotlattice/dotlattice';
 import '../../App.css';
 import '../../index.css';
 import './home.css';
@@ -26,7 +27,9 @@ function Home() {
                 direction='row'
             >
                 <p className='title'>We're creating the next generation of space innovators</p>
-                {/* *** INSERT DOT MATRIX HERE *** */}
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
             </Stack>
             <Grid2 
                 container
@@ -74,7 +77,9 @@ function Home() {
                     by a shared passion for innovation and exploration"
                     fontClassName='headline'
                 />
-                {/* *** INSERT DOT MATRIX HERE *** */}
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
             </Stack>
             <Grid2
                 className='chunk'
@@ -132,26 +137,37 @@ function Home() {
                 </Grid2>
                 <Grid2 size={1}>Pie chart</Grid2>
             </Grid2>
-            <Box className='chunk'>
-                <p className='title'>Projects</p>
-                <RedBulletText
-                    fontClassName='headline'
-                    text='We strive for best practices, taking inspiration
-                    from NASA handbooks to ensure high standards'
-                ></RedBulletText>
-            </Box>
+            <Stack
+                className='chunk'
+                direction='row'
+            >
+                <Stack>
+                    <p className='title'>Projects</p>
+                    <RedBulletText
+                        fontClassName='headline'
+                        text='We strive for best practices, taking inspiration
+                        from NASA handbooks to ensure high standards'
+                    />
+                </Stack>
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
+            </Stack>
             
             <ProjectsSlideshow />
             
             <Stack
                 className='chunk'
+                direction='row'
             >
                 <RedBulletText
                     fontClassName='headline'
                     text='The Swinburne Rover Team operates with the core values 
                     of innovation, collaboration and diversity'
                 />
-
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
             </Stack>
             <Stack
                 className='chunk'
