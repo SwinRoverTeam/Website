@@ -7,6 +7,7 @@ import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'
+import { Link } from 'react-router-dom';
 
 
 function Footer () {
@@ -87,18 +88,18 @@ function WebLinks () {
 			spacing={1}
 		>
 			<p className="medium-text">Website</p>
-			<a href="#">
+			<Link to='/'>
 				<UnderlineButton text='Home'/>
-			</a>
-			<a href="#">
+			</Link>
+			<Link to='/about'>
 				<UnderlineButton text='About'/>
-			</a>
+			</Link>
 			<a href="#">
 				<UnderlineButton text='Team'/>
 			</a>
-			<a href="#">
+			<Link to='/projects'>
 				<UnderlineButton text='Projects'/>
-			</a>
+			</Link>
 			<a href="#">
 				<UnderlineButton text='Sponsors'/>
 			</a>

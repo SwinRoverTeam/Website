@@ -6,6 +6,7 @@ import navIconBlack from '../../assets/nav-icon-black.svg'
 import navIconWhite from '../../assets/nav-icon-white.svg'
 import SRTLogo from '../../assets/srt-logo.svg'
 import TeamImage from '../../assets/srt-image.jpg'
+import { Link } from 'react-router-dom';
 let navbar = document.querySelector('.navbar .menu');
 
 function changeText(text) {
@@ -65,15 +66,15 @@ function Navbar() {
         </a>
         <div className="menu">
         <div className="categories">
-        <a href="" className="underline-button">
+        <Link to="/" className="underline-button">
             <p style={{ '--categories-number': 0 }}>Home</p>
-          </a>
-          <a onClick={() => toggleOptions('about-options')} className="underline-button">
+          </Link>
+          <Link to='/about' onClick={() => toggleOptions('about-options')} className="underline-button">
             <p style={{ '--categories-number': 1 }}>About</p>
-          </a>
-          <a onClick={() => toggleOptions('projects-options')} className="underline-button">
+          </Link>
+          <Link to='/projects' onClick={() => toggleOptions('projects-options')} className="underline-button">
             <p style={{ '--categories-number': 2 }}>Projects</p>
-          </a>
+          </Link>
           <a href="" className="underline-button">
             <p style={{ '--categories-number': 3 }}>Sponsors</p>
           </a>
