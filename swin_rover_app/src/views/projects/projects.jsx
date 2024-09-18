@@ -11,6 +11,10 @@ import LinkRoundButton from '../../components/roundbutton/linkroundbutton';
 import FeaturedImg from '../../assets/featured-project-img.jpg'
 import DotLattice from '../../components/dotlattice/dotlattice'
 
+function goToUrl(url) {
+    window.location.href=url;
+}
+
 function Projects() {
     return (
         <>
@@ -52,7 +56,7 @@ function Projects() {
                             </div>
                             <div className="project-details">
                                 <h2>Developing the first Swinburne Rover</h2>
-                                <LinkRoundButton text="View project" />
+                                <LinkRoundButton text="View project" click_func={() => goToUrl('/comingsoon')}/>
                             </div>
                         </div>
                     </Grid2>
@@ -61,8 +65,8 @@ function Projects() {
                     </Grid2>
             </Grid2>
             <div className="grid">
-                <ProjectsGridCell  image_url={FirstHorizontalImg} title="Building the First Swinburne Rover" subtext="ARCh Competition 2024" button_url="comingsoon.html"/>
-                <ProjectsGridCell  image_url={SecondHorizontalImg} title="Building the new Website" subtext="2025 SRT Team Project" button_url="comingsoon.html"/>
+                <ProjectsGridCell  image_url={FirstHorizontalImg} title="Building the First Swinburne Rover" subtext="ARCh Competition 2024" button_url="/comingsoon"/>
+                <ProjectsGridCell  image_url={SecondHorizontalImg} title="Building the new Website" subtext="2025 SRT Team Project" button_url="/comingsoon"/>
             </div>
             <Footer />
         </>

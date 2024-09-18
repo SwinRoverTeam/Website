@@ -120,6 +120,7 @@
     left:3vw;
     pointer-events:none;
     height:100%;
+    width:94%;
 }
 
 .menu .sub-options > div > div, .menu .sub-options > div > a {
@@ -170,7 +171,6 @@
     margin-top:3vh;
     display:flex;
     justify-content: space-between;
-    padding-right:5vw;
 }
 
 .extra-links > div {

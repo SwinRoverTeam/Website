@@ -3,9 +3,9 @@ import './roundbutton.css'
 import linkIconBlack from '../../assets/link-icon-black.svg'
 import linkIconWhite from '../../assets/link-icon-white.svg'
 
-function LinkRoundButton({ text, link, style }) {
+function LinkRoundButton({ text, click_func, style }) {
     return (
-      <a href={link} className="round-button" style={style}>
+      <a className="round-button" style={style} onClick={click_func}>
         <div className="button-info">
           <div className="button-icon-container diagonal">
             <img className="button-icon" src={linkIconBlack} alt="Link Icon Black" />

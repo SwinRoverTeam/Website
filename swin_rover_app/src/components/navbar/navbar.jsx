@@ -6,6 +6,11 @@ import navIconBlack from '../../assets/nav-icon-black.svg'
 import navIconWhite from '../../assets/nav-icon-white.svg'
 import SRTLogo from '../../assets/srt-logo.svg'
 import TeamImage from '../../assets/srt-image.jpg'
+import MissionImg from '../../assets/mission-thumbnail.jpg'
+import CodeOfConductImg from '../../assets/code-of-conduct-thumbnail.jpg'
+import RoverProjectImg from '../../assets/featured-project-img.jpg'
+import WebsiteMockup from '../../assets/macbook-mockup.jpg'
+
 let navbar = document.querySelector('.navbar .menu');
 
 function changeText(text) {
@@ -15,6 +20,13 @@ function changeText(text) {
             document.querySelector('.second-nav-button-text').innerHTML = text;
             document.querySelector('.second-nav-button-text').classList.remove('changing-text');
         }, 300)
+}
+
+function goToUrl(url, toggle_menu = false) {
+    window.location.href=url;
+    if (toggle_menu == true) {
+        toggleMenu();
+    }
 }
 
 function toggleMenu() {
@@ -80,22 +92,21 @@ function Navbar() {
         </div>
         <div className="sub-options">
             <div className="about-options">
-            <NavCard title="Vision and Mission" number="0"/>
-            <NavCard title="Meet the Team" number="1"/>
-            <NavCard title="Code of Conduct" number="2"/>
-            <LinkRoundButton text="View more" />
+            <NavCard title="Vision and Mission" number="0" img_src={MissionImg} click_func={() => goToUrl('/about#mission', true)}/>
+            <NavCard title="Meet the Team" number="1" img_src={TeamImage} click_func={() => goToUrl('/about#breakdown', true)}/>
+            <NavCard title="Code of Conduct" number="2" img_src={CodeOfConductImg} click_func={() => goToUrl('/about#conduct', true)}/>
+            <LinkRoundButton text="View more" click_func={() => goToUrl('/about')}/>
             </div>
             <div className="projects-options">
-            <NavCard title="Project 1" number="0"/>
-            <NavCard title="Project 2" number="1"/>
-            <NavCard title="Project 3" number="2"/>
-            <LinkRoundButton text="View more" />
+            <NavCard title="Building the First Swinburne Rover" number="0" img_src={RoverProjectImg} click_func={() => goToUrl('/comingsoon', true)}/>
+            <NavCard title="Building the New Website" number="1" img_src={WebsiteMockup} click_func={() => goToUrl('/comingsoon', true)}/>
+            <LinkRoundButton text="View more" click_func={() => goToUrl('/comingsoon', true)}/>
             </div>
         </div>
         <div className="extra-links">
             <div className="contacts">
-            <LinkRoundButton text="Join the team" style={{'--links-number': 0}}/>
-            <LinkRoundButton text="Sponsor us" style={{'--links-number': 1}}/>
+            <LinkRoundButton text="Join the team" style={{'--links-number': 0}} click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au', true)}/>
+            <LinkRoundButton text="Sponsor us" style={{'--links-number': 1}} click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au', true)}/>
             </div>
             <div className="socials">
             <a href="" style={{ '--links-number': 2 }}>
@@ -114,17 +125,17 @@ function Navbar() {
     );
     }
 
-    function NavCard({ title = "Vision and Mission", number}) {
-    return (
-    <div className="nav-card" style={{ '--nav-card-number': parseInt(number, 10) }}>
-        <div className="image">
-        <LinkRoundButton text="View Page" />
+    function NavCard({ title = "Vision and Mission", number, img_src, click_func}) {
+        return (
+        <div className="nav-card" style={{ '--nav-card-number': parseInt(number, 10) }}>
+            <div className="image" style={{backgroundImage: `url(${img_src})`}}>
+            <LinkRoundButton text="View Page" click_func={click_func}/>
+            </div>
+            <div className="info">
+            <h2>{title}</h2>
+            </div>
         </div>
-        <div className="info">
-        <h2>{title}</h2>
-        </div>
-    </div>
-    );
-}
+        );
+    }
 
 export default Navbar;

@@ -10,6 +10,10 @@ import UnderlineButton from '../underlinebutton/underlinebutton'
 import DotLattice from '../dotlattice/dotlattice';
 
 
+function goToUrl(url) {
+	window.location.href=url;
+}
+
 function Footer () {
 	return (
 		<footer>
@@ -22,7 +26,7 @@ function Footer () {
 				<Respects />
 				<Stack
 					direction='row'
-					spacing={{ xs: 0, md: 15 }}
+					spacing={{ xs: 0, md: 10 }}
 					justifyContent={{ xs: 'space-evenly', lg: 'none'}}
 					className="links-container"
 				>
@@ -93,23 +97,24 @@ function WebLinks () {
 			<h3>Website</h3>
 			<UnderlineButton
 				text='Home'
+				click_func={() => goToUrl('/home')}
 			/>
 			<UnderlineButton
 				text='About'
+				click_func={() => goToUrl('/about')}
 			/>
 			<UnderlineButton
 				text='Team'
+				click_func={() => goToUrl('/about#breakdown')}
 			/>
 			<UnderlineButton
 				text='Projects'
+				click_func={() => goToUrl('/projects')}
 			/>
 			<UnderlineButton
 				text='Sponsors'
+				click_func={() => goToUrl('/home#sponsors')}
 			/>
-			{/* <a href='#' className='inter-links'>About</a>
-			<a href='#' className='inter-links'>Team</a>
-			<a href='#' className='inter-links'>Projects</a>
-			<a href='#' className='inter-links'>Sponsors</a> */}
 		</Stack>
 	);
 };
@@ -125,9 +130,11 @@ function SocialLinks () {
 			<h3>Social</h3>
 			<UnderlineButton
 				text='LinkedIn'
+				click_func={() => goToUrl('https://www.linkedin.com/company/swinburne-rover-team/')}
 			/>
 			<UnderlineButton
 				text='Instagram'
+				click_func={() => goToUrl('https://www.instagram.com/swinroverteam/')}
 			/>
 		</Stack>
 	);
@@ -144,15 +151,19 @@ function ContactLinks () {
 			<h3>Contact</h3>
 			<UnderlineButton
 				text='Contact'
+				click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
 			/>
 			<UnderlineButton
 				text='Join team'
+				click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
 			/>
 			<UnderlineButton
 				text='Sponsor'
+				click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
 			/>
 			<UnderlineButton
 				text='Email'
+				click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
 			/>
 		</Stack>
 	);
@@ -167,8 +178,8 @@ function Policies () {
 			justifyContent='flex-start'
 			spacing={4}
 		>
-			<a href='#' className='inter-links'>Terms and Conditions</a>
-			<a href='#' className='inter-links'>Privacy Policy</a>
+			<a href='/comingsoon' className='inter-links'>Terms and Conditions</a>
+			<a href='/comingsoon' className='inter-links'>Privacy Policy</a>
 		</Stack>
 	);
 }

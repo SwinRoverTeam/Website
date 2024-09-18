@@ -1,14 +1,14 @@
 .projects-slideshow {
     display:flex;
     gap:2vw;
-    padding:0 3vw;
+    padding:0 2.5vw;
     width:100%;
 }
 
 .projects-container {
     position:relative;
     height:90vh;
-    width:80vw;
+    width:100%;
 }
 
 .projects-container .text {
@@ -33,11 +33,11 @@
 }
 
 .project .wide-image {
-    width:50vw;
+    width:65%;
 }
 
 .project .vertical-image {
-    width:30vw;
+    width:35%;
     transition-delay:0.1s;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .project {
-    width:80vw;
+    width:100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -67,11 +67,11 @@
     display: flex;
     gap:0.5vw;
     margin-top:3vh;
+    align-items: center;
 }
 
 .projects-slideshow .sidebar .dot {
     margin:0;
-    margin-top:0.5vh;
 }
 
 .projects-container h1 {
@@ -80,7 +80,6 @@
 
 .projects-container .subtitle, .sidebar .tag-text {
     font-size:var(--small-size);
-    margin-bottom:1vh;
 }
 
 .sidebar .tag .tag-text, .projects-container .text-container > div {
@@ -159,6 +158,6 @@
     }
 
     .projects-container {
-        height:50vh;
+        height:55vh;
     }
 }

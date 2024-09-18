@@ -11,6 +11,8 @@
     border-radius:1.5vw;
 }
 
-body {
-    height:200vh;
+@media screen and (max-width: 900px) {
+    .parallax-img {
+        border-radius:3vw;
+    }
 }

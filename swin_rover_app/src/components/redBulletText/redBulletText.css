@@ -7,11 +7,12 @@
     width: 0.5em;
 }
 .red-bullet-inner span {
-	font-size: 2rem;
+	font-size: 3rem;
 	color: var(--red-color);
     margin-top: -2em;
 }
 .red-bullet-text {
     margin-left: 1rem;
     margin-top: 0.2em;
+    width:90%;
 }

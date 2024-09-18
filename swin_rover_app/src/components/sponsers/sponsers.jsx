@@ -45,7 +45,7 @@ function Sponsors () {
                     <p id='text'>Platinum Sponsor</p>
                 </Box>
                 <Box className="sponsor-button">
-                    <a href="" className="round-button">
+                    <a href="mailto:swinroverteam@swin.edu.au" className="round-button">
                         <div className="button-info">
                         <div className="button-icon-container diagonal">
                             <img className="button-icon" src={linkIconWhite} alt="Link Icon White" />
@@ -63,9 +63,4 @@ function Sponsors () {
     );
 }
     
-
-
-
-    
-
 export default Sponsors;

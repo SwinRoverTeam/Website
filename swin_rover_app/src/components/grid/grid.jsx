@@ -2,6 +2,10 @@ import * as React from 'react';
 import './grid.css'
 import LinkRoundButton from '../roundbutton/linkroundbutton';
 
+function goToUrl(url) {
+  window.location.href=url;
+}
+
 function ProjectsGridCell({image_url, title, subtext, button_url}) {
     return (  
       <div className="container">
@@ -11,7 +15,7 @@ function ProjectsGridCell({image_url, title, subtext, button_url}) {
                 <h3 className="inter-paragraph">{title}</h3>
                 <p className="inter-links">{subtext}</p>
             </div>
-              <LinkRoundButton text="View project" />
+              <LinkRoundButton text="View project" click_func={() => goToUrl(button_url)}/>
             </div>
      
     </div>

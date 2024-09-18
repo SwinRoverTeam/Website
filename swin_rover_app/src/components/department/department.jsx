@@ -118,7 +118,7 @@ function Business() {
               <div className="cell">
                 <h2>Finance</h2>
                   
-                  <p className='bottom-align'>Responsible for managing finances. This includes funding, and budget allocation.</p>
+                  <p className='bottom-align'>Responsible for managing finances. This includes funding and budget allocation.</p>
               </div>
             </Grid>
             <Grid size={{ xs: 18, md: 3 }}>

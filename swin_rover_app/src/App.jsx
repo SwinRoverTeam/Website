@@ -1,14 +1,14 @@
 import './App.css'
-import AboutUs from './components/aboutusgrid/AboutUsGrid';
-import Mission from './components/mission/mission';
-import About from './views/about/about';
+import Home from './views/home/home';
+import ComingSoon from './views/comingsoon/comingsoon'
 
 
 function App() {
 	return (
 		<>
-			<About/>
+			<ComingSoon />
 		</>
 	)
+}
 
 export default App;
