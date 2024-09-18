@@ -11,10 +11,13 @@ import SecondVerticalImg from '../../assets/iphone-mockup.jpg';
 let projects_slide_number = 0;
 let numSlides = 2;
 let subtitles = ['ARCh Competition 2024', '2025 SRT Team Project'];
-let titles = ['Developing the first Swinburne Rover', 'Building the new Website'];
-let projects_links = ['comingsoon.html', 'comingsoon.html'];
+let titles = ['Building the first Swinburne Rover', 'Building the new Website'];
+let projects_links = ['/comingsoon', '/comingsoon'];
 let tag_titles = ['Featured', 'Latest']
 
+function goToUrl(url) {
+    window.location.href=url;
+}
 function nextSlide() {
     projects_slide_number = projects_slide_number + 1;
     hideText();
@@ -35,6 +38,7 @@ function hideText() {
 }
 
 function displaySlides() {
+    console.log('displaying slides');
     if (projects_slide_number < 0) {
         projects_slide_number = projects_slide_number * -1;
         projects_slide_number = projects_slide_number % numSlides;
@@ -82,8 +86,8 @@ function ProjectsSlideshow() {
                 </div>
                 </div>
                 <div className="controls">
-                <LeftRoundButton text="Previous" onClick={previousSlide}/>
-                <RightRoundButton text="Next" onClick={nextSlide}/>
+                <LeftRoundButton text="Previous" click_func={previousSlide}/>
+                <RightRoundButton text="Next" click_func={nextSlide}/>
                 </div>
             </div>
             <div className="projects-container">
@@ -93,10 +97,10 @@ function ProjectsSlideshow() {
                     <p>ARCh Competition 2024</p>
                     </div>
                     <div>
-                    <h1>Developing the first Swinburne Rover</h1>
+                    <h1>Building the first Swinburne Rover</h1>
                     </div>
                 </div>
-                <LinkRoundButton text="View project" />
+                <LinkRoundButton text="View project" click_func={() => goToUrl('/comingsoon')}/>
                 </div>
                 <div className="projects-container">
                     <ProjectCard landscape_img={FirstHorizontalImg} vertical_img={FirstVerticalImg} classes="project active" />

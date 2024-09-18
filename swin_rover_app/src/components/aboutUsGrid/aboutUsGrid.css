@@ -1,0 +1,172 @@
+.about-box {
+    height: 40vh;
+    background-color: var(--dark-grey-color);
+    border-radius: 1vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.about-title {
+    font-size: var(--title-size);
+    padding:2vh 2vw;
+}
+
+.about-subtitle {
+    font-size: var(--medium-size);
+    padding:2vh 2vw;
+    padding-bottom:3vh;
+    border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+.members-box {
+    height: 40vh;
+    background-color: #DA3838;
+    border-radius: 1vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.members-title {
+    font-size: var(--title-size);
+    padding:2vh 2vw;
+}
+
+.team-box {
+    border-radius: 1vw;
+    overflow: hidden;
+    height: 40vh;
+    position: relative;
+}
+
+.team-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.team-button {
+    position: absolute;
+    bottom: 2vh;
+    left: 2vw;
+}
+
+.culture-box {
+    border-radius: 1vw;
+    border: 1px solid #222222;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.culture-text {
+    font-size:var(--medium-size);
+}
+
+.pie-chart-container {
+    background-color: #FFFFFF;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    height: 81vh;
+}
+
+.pie-chart {
+    color: black;
+    align-content: left;
+    overflow: auto;
+    font-size: var(--medium-size);
+    width:100%;
+    margin-top: 3vh;
+}
+
+.pie-diagram-container {
+    height:40%;
+}
+
+.pie-chart-label-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.pie-chart-label-color {
+    height:3vh;
+    aspect-ratio: 1/1;
+    border-radius:0.25vw;
+}
+
+.pie-chart-science {
+    background-color: var(--black-color);
+}
+
+.pie-chart-arm {
+    background-color: #DDDDDD;
+}
+
+.pie-chart-chassis {
+    background-color: var(--red-color);
+}
+
+.pie-chart-ecs {
+    background-color: #414FE8;
+}
+
+.pie-chart-logic {
+    background-color: #D9B638;
+}
+
+.pie-chart-social-media {
+    background-color: #aa4db2;
+}
+
+.pie-chart-finance {
+    background-color: #25b7da;
+}
+
+@media screen and (max-width:900px) {
+    .about-box, .members-box {
+        height:20vh;
+        border-radius: 3vw;
+    }
+
+    .team-box {
+        height:30vh;
+        border-radius: 3vw;
+    }
+
+    .culture-box {
+        border-radius: 3vw;
+    }
+
+    .pie-chart-container {
+        height:75vh;
+        border-radius: 3vw;
+    }
+
+    .pie-diagram-container {
+        height:45%;
+    }
+
+    .members-box {
+        flex-direction: row;
+        align-items: center;
+        padding:2vh 5vw;
+        height:15vh;
+    }
+
+    .members-box .about-subtitle {
+        border-top: none;
+    }
+
+    .about-title {
+        padding: 3vh 5vw;
+    }
+}

@@ -78,8 +78,8 @@ body {
 
 @media screen and (max-width:900px) {
     :root {
-        --headline-size: 2.5em;
-        --title-size: 3em;
+        --headline-size: 2.4em;
+        --title-size: 2.75em;
         --small-size: 1em;
         --medium-size:1.5em;
     }
@@ -101,16 +101,18 @@ h1 {
     line-height:1;
 }
 
-p {
-    letter-spacing: -1px;
-}
-
 .dot {
-    width: 0.75vw;
-    height: 0.75vw;
+    width: 0.75rem;
+    height: 0.75rem;
     margin-top: 3vh;
     margin-right: 2vw;
     border-radius: 100%;
     background-color: var(--red-color);
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
+}
+
+@media screen and (max-width:900px) {
+    .dot-lattice-grid-container {
+        display:none;
+    }
 }

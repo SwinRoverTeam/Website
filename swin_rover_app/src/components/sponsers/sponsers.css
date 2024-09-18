@@ -44,7 +44,7 @@
     justify-content: center;
 }
 
-.round-button {
+.sponsors-container .round-button {
     text-decoration: none;
     color: white;
     font-size: var(--small-size);
@@ -64,12 +64,12 @@
     justify-content: center;
 }
 
-.round-button .button-info {
+.sponsors-container .round-button .button-info {
     display:flex;
     gap:1vw;
 }
 
-.round-button::before {
+.sponsors-container .round-button::before {
     content:'';
     position: absolute;
     background-color: var(--grey-color);
@@ -83,49 +83,49 @@
     transform-origin: bottom;
 }
 
-.round-button:hover::before {
+.sponsors-container .round-button:hover::before {
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
 }
 
-.button-text-container, .button-icon-container {
+.sponsors-container .round-button .button-text-container, .button-icon-container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: var(--small-size);
 }
 
-.button-icon-container .button-icon {
+.sponsors-container .round-button .button-icon-container .button-icon {
     height: var(--small-size);
     padding: 0.25em 0;
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
 }
 
-.diagonal .button-icon:nth-child(2) {
+.sponsors-container .round-button .diagonal .button-icon:nth-child(2) {
     transform:translate(-1.25em, 0);
 }
 
-.round-button:hover > .button-info .diagonal .button-icon:nth-child(1) {
+.sponsors-container .round-button:hover > .button-info .diagonal .button-icon:nth-child(1) {
     transform:translate(var(--small-size), calc(var(--small-size) * -1));
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
 }
 
-.round-button:hover > .button-info .diagonal .button-icon:nth-child(2) {
+.sponsors-container .round-button:hover > .button-info .diagonal .button-icon:nth-child(2) {
     transform:translate(0, calc(var(--small-size) * -1));
     transition: transform 0.3s cubic-bezier(.72,.01,.32,1.01);
 }
 
-.button-text-container p {
+.sponsors-container .round-button .button-text-container p {
     transition: transform 0.3s ease-out;
     transition-delay: 0.05s;
 }
 
-.button-text-container p {
+.sponsors-container .round-button .button-text-container p {
     color: var(--white-color);
 }
 
-.round-button:hover >  .button-info p {
+.sponsors-container .round-button:hover >  .button-info p {
     transform: translateY(calc(var(--small-size) * -1));
     transition: transform 0.3s ease-in-out;
 }
@@ -146,7 +146,7 @@
         width:100%;
     }
 
-    .round-button p {
+    .sponsors-container .round-button p {
         line-height:0.9;
     }
 }

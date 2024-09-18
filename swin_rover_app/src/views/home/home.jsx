@@ -12,27 +12,42 @@ import UnderlineButton from '../../components/underlinebutton/underlinebutton';
 import instagamIcon from '../../assets/instagram-icon-white.svg'
 import linkedinIcon from '../../assets/linkedin-icon-white.svg'
 import emailIcon from '../../assets/email-icon-white.svg'
+import DotLattice from '../../components/dotlattice/dotlattice';
+import Sponsors from '../../components/sponsers/sponsers';
 import '../../App.css';
 import '../../index.css';
 import './home.css';
+import About from '../../components/aboutUsGrid/aboutUsGrid';
+import { borderBottom } from '@mui/system';
 
+function goToUrl(url) {
+    window.location.href=url;
+}
 
 function Home() {
     return (
         <>
             <Navbar />
-            <Stack
+            <Grid2
+                container
+                spacing={0}
+                columns={8}
                 className='chunk-no-border top-element'
                 direction='row'
             >
-                <p className='title'>We're creating the next generation of space innovators</p>
-                {/* *** INSERT DOT MATRIX HERE *** */}
-            </Stack>
+                <Grid2 size={{xs: 8, md: 6}}>
+                    <p className='title'>We're creating the next generation of space innovators</p>
+                </Grid2>
+                <Grid2 size={2} className="dot-lattice-grid-container">
+                    <DotLattice />
+                </Grid2>
+            </Grid2>
             <Grid2 
                 container
                 spacing={3}
                 columns={8}
                 className='chunk'
+                style={{borderBottom: 'none', borderTop: '2px solid var(--grey-color)', paddingTop: '3vh'}}
             >
                 <Grid2 size={{ xs:8, md:2 }}>
                     <Stack
@@ -61,26 +76,30 @@ function Home() {
                 >
                     <HeroSlideshow />
                 </Grid2>
-                <Grid2 size={{ xs:8, md:2 }}>
-                    <p>Grid spot 3 (Video)</p>
+                <Grid2 size={{ xs:8, md:3 }}>
+                    <iframe src="https://www.youtube.com/embed/h89MX0RmX4w?autoplay=1" title="SRT 2023 Overview" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </Grid2>
             </Grid2>
             <Stack
                 className='chunk'
                 direction='row'
+                style={{paddingBottom:'5vh'}}
             >
                 <RedBulletText
                     text="We're a diverse and dedicated team of students united 
                     by a shared passion for innovation and exploration"
                     fontClassName='headline'
                 />
-                {/* *** INSERT DOT MATRIX HERE *** */}
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
             </Stack>
             <Grid2
                 className='chunk'
                 container
                 spacing={5}
                 direction={{ xs: 'column-reverse', lg: 'row'}}
+                style={{padding: '5vh 2.5vw', borderBottom: 'none'}}
             >
                 <Grid2
                     size={{ xs: 12, lg: 6 }}
@@ -89,6 +108,7 @@ function Home() {
                         <LinkRoundButton
                             text='Learn more about our vision, mission and team values'
                             style={{}}
+                            click_func={() => goToUrl('/about')}
                         />
                     </div>
                     
@@ -118,62 +138,85 @@ function Home() {
                 columns={4}
                 className='chunk'
                 direction='row'
+                style={{borderTop: 'none', borderBottom: 'none'}}
             >
-                <Grid2
-                    container
-                    size={3}
-                    spacing={2}
-                    columns={3}
-                >
-                    <Grid2 size={2}>About us</Grid2>
-                    <Grid2 size={1}>50+</Grid2>
-                    <Grid2 size={1}>Photo and button</Grid2>
-                    <Grid2 size={2}>Our team culture is sick</Grid2>
-                </Grid2>
-                <Grid2 size={1}>Pie chart</Grid2>
+                <About />
             </Grid2>
-            <Box className='chunk'>
-                <p className='title'>Projects</p>
-                <RedBulletText
-                    fontClassName='headline'
-                    text='We strive for best practices, taking inspiration
-                    from NASA handbooks to ensure high standards'
-                ></RedBulletText>
-            </Box>
+            <Stack
+                className='chunk'
+                direction='row'
+                style={{paddingBottom:'5vh'}}
+            >
+                <Stack>
+                    <p className='title' style={{paddingBottom: '5vh'}}>Projects</p>
+                    <RedBulletText
+                        fontClassName='headline'
+                        text='We strive for best practices, taking inspiration
+                        from NASA handbooks to ensure high standards'
+                    />
+                </Stack>
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
+            </Stack>
             
             <ProjectsSlideshow />
+
+            <Stack
+                className='chunk'
+                direction='row'
+                style={{padding: '5vh 2.5vw', paddingBottom:'5vh'}}
+            >
+                <RedBulletText
+                    text="Our sponsors make bring our cutting-edge systems to life."
+                    fontClassName='headline'
+                />
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
+            </Stack>
+
+            <Sponsors />
             
             <Stack
                 className='chunk'
+                direction='row'
+                style={{paddingBottom:'5vh'}}
             >
                 <RedBulletText
                     fontClassName='headline'
                     text='The Swinburne Rover Team operates with the core values 
                     of innovation, collaboration and diversity'
                 />
-
+                <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
+                    <DotLattice />
+                </Box>
             </Stack>
             <Stack
                 className='chunk'
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={5}
+                style={{borderBottom: 'none'}}
             >
                 <Stack
                     direction='column'
                     spacing={5}
                     justifyContent='space-between'
+                    style={{marginLeft: '3vw', paddingTop: {xs: '0', md: '3vh'}}}
                 >
-                    <p className='medium-text'>Some text here about member benefits, etc, and why anyone should join.</p>
+                    <p className='small-text' style={{width:'90%'}}>Join the team and make like-minded friends, get valuable hands on skills in engineering, IT, design, business and social media management! The Swinburne Rover Team is a great way to kick start your career and discover a passion for space exploration. </p>
                     <Stack
-                        spacing={{ xs: 0, md: 1.6 }}
+                        spacing={{ xs: 1, md: 1.6 }}
                         direction={{ xs: 'row-reverse', md: 'column' }}
-                        justifyContent={{ xs: 'space-evenly', md: 'space-between' }}
+                        justifyContent={{ xs: 'flex-end', md: 'space-between' }}
                     >
                         <LinkRoundButton
                             text='Sponsor us'
+                            click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
                         />
                         <LinkRoundButton
                             text='Join the team'
+                            click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}
                         />
                     </Stack>
                 </Stack>
@@ -189,10 +232,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div className='spacing-box'></div>
-                        <a href="#">
+                        <a href="https://www.instagram.com/swinroverteam/">
                             <img src={instagamIcon} alt="Instagram Icon" />
                         </a>
-                        <UnderlineButton text='Instagram'/>
+                        <UnderlineButton text='Instagram' click_func={() => goToUrl('https://www.instagram.com/swinroverteam/')}/>
                     </Stack>
                     <Stack
                         className='social-links-box-inner'
@@ -201,10 +244,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div className='spacing-box'></div>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/swinburne-rover-team/">
                             <img src={linkedinIcon} alt="LinkedIn Icon" />
                         </a>
-                        <UnderlineButton text='LinkedIn'/>
+                        <UnderlineButton text='LinkedIn' click_func={() => goToUrl('https://www.linkedin.com/company/swinburne-rover-team/')}/>
                     </Stack>
                     <Stack
                         className='social-links-box-inner last'
@@ -213,10 +256,10 @@ function Home() {
                         alignItems='center'
                     >
                         <div className='spacing-box'></div>
-                        <a href="#">
+                        <a href="mailto:swinroverteam@swin.edu.au">
                             <img src={emailIcon} alt="Email Icon" />
                         </a>
-                        <UnderlineButton text='Email'/>
+                        <UnderlineButton text='Email' click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}/>
                     </Stack>
                 </Stack>
             </Stack>

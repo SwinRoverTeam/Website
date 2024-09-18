@@ -1,4 +1,3 @@
-
 let slideshow_img_number = 0;
 let numImages = 3;
 
