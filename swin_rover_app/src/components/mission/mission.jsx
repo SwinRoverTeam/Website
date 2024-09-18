@@ -7,13 +7,9 @@ import LinkRoundButton from '../roundbutton/linkroundbutton';
 import ExplorationImg from '../../assets/exploration-img.jpg';
 import RoverImg from '../../assets/DSC06200.png';
 
-function goToUrl(url, toggle_menu = false) {
-    window.location.href=url;
-    if (toggle_menu == true) {
-        toggleMenu();
-    }
+function goToUrl(url) {
+    window.location.href=url; 
 }
-
 export default function Mission(){
     return(
         <>

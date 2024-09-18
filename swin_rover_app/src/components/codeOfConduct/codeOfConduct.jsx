@@ -6,7 +6,7 @@ import LinkRoundButton from '../roundbutton/linkroundbutton';
 
 function goToUrl(url) {
     window.location.href=url;
-  }
+}
 
 export default function codeOfConduct(){
     return(
