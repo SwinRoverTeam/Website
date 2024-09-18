@@ -6,11 +6,8 @@ import LinkRoundButton from '../roundbutton/linkroundbutton';
 import Image from '../../assets/Rectangle 17.png';
 import './aboutUsGrid.css'; 
 
-function goToUrl(url, toggle_menu = false) {
+function goToUrl(url) {
   window.location.href=url;
-  if (toggle_menu == true) {
-      toggleMenu();
-  }
 }
 
 export default function About() {

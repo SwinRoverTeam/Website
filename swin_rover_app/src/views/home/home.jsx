@@ -18,7 +18,6 @@ import '../../App.css';
 import '../../index.css';
 import './home.css';
 import About from '../../components/aboutUsGrid/aboutUsGrid';
-import SRTVideo from '../../assets/srt-video.mp4'
 import { borderBottom } from '@mui/system';
 
 function goToUrl(url) {
@@ -78,9 +77,7 @@ function Home() {
                     <HeroSlideshow />
                 </Grid2>
                 <Grid2 size={{ xs:8, md:3 }}>
-                    <a href="https://www.youtube.com/watch?v=h89MX0RmX4w">
-                        <video src={SRTVideo} autoPlay muted loop></video>
-                    </a>
+                    <iframe src="https://www.youtube.com/embed/h89MX0RmX4w?autoplay=1" title="SRT 2023 Overview" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </Grid2>
             </Grid2>
             <Stack

@@ -4,7 +4,6 @@
     font-size: var(--title-size);
     line-height: 1;
     width: 90%;
-    margin-bottom: 4vh;
 }
 .headline {
     font-size: var(--headline-size);
@@ -60,7 +59,8 @@
 }
 
 .featured-project .tag {
-    padding:3vh 1.5vw;
+    padding:2vh 1.5vw;
+    margin:0;
 }
 
 .img-container img {
