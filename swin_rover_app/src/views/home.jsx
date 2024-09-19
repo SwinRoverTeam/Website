@@ -2,22 +2,22 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Grid2 from '@mui/material/Grid2';
-import Footer from '../../components/footer/footer';
-import RedBulletText from '../../components/redBulletText/redBulletText';
-import HeroSlideshow from '../../components/heroslideshow/heroslideshow';
-import LinkRoundButton from '../../components/roundbutton/linkroundbutton';
-import Navbar from '../../components/navbar/navbar';
-import ProjectsSlideshow from '../../components/projectsslideshow/projectsslideshow';
-import UnderlineButton from '../../components/underlinebutton/underlinebutton';
-import instagamIcon from '../../assets/instagram-icon-white.svg'
-import linkedinIcon from '../../assets/linkedin-icon-white.svg'
-import emailIcon from '../../assets/email-icon-white.svg'
-import DotLattice from '../../components/dotlattice/dotlattice';
-import Sponsors from '../../components/sponsers/sponsers';
-import '../../App.css';
-import '../../index.css';
+import Footer from '../components/footer/footer';
+import RedBulletText from '../components/redBulletText/redBulletText';
+import HeroSlideshow from '../components/heroslideshow/heroslideshow';
+import LinkRoundButton from '../components/roundbutton/linkroundbutton';
+import Navbar from '../components/navbar/navbar';
+import ProjectsSlideshow from '../components/projectsslideshow/projectsslideshow';
+import UnderlineButton from '../components/underlinebutton/underlinebutton';
+import instagamIcon from '../assets/instagram-icon-white.svg'
+import linkedinIcon from '../assets/linkedin-icon-white.svg'
+import emailIcon from '../assets/email-icon-white.svg'
+import DotLattice from '../components/dotlattice/dotlattice';
+import Sponsors from '../components/sponsers/sponsers';
+import '../App.css';
+import '../index.css';
 import './home.css';
-import About from '../../components/aboutUsGrid/aboutUsGrid';
+import About from '../components/aboutUsGrid/aboutUsGrid';
 import { borderBottom } from '@mui/system';
 
 function goToUrl(url) {
