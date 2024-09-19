@@ -42,4 +42,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-southeast-2
           AWS_S3_BUCKET: srt-website-bucket  # Replace with your actual bucket name
-          SOURCE_DIR: website/dist  # The dist directory where the static files are generated
+          SOURCE_DIR: swin_rover_app/dist  # The dist directory where the static files are generated
