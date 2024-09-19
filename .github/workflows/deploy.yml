@@ -23,13 +23,13 @@ jobs:
       # Step 3: Navigate to the website folder and install dependencies
       - name: Install dependencies
         run: |
-          cd website  # Navigate to the folder containing the React project
+          cd swin_rover_app  # Navigate to the folder containing the React project
           npm install
 
       # Step 4: Build the React app (assuming it's a React project)
       - name: Build React app
         run: |
-          cd website  # Ensure we're in the website folder
+          cd swin_rover_app  # Ensure we're in the website folder
           npm run build  # Run the build script to generate static files in the 'build' directory
 
       # Step 5: Deploy the built website to S3
