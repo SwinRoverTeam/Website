@@ -46,24 +46,6 @@
     align-items: flex-end;
     justify-content: center;
 }
-.social-links-box {
-    height: 40vh;
-    width: 100%;
-}
-.social-links-box-inner {
-    width: 100%;
-    border: 1px solid #303030;
-    padding: 5vh 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.social-links-box-inner.first {
-    border-radius: 3em 0 0 3em;
-}
-.social-links-box-inner.last {
-    border-radius: 0 3em 3em 0;
-}
 
 .chart-container {
     background:white;

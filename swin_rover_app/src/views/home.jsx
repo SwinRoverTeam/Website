@@ -238,7 +238,7 @@ function Home() {
                         <UnderlineButton text='Instagram' click_func={() => goToUrl('https://www.instagram.com/swinroverteam/')}/>
                     </Stack>
                     <Stack
-                        className='social-links-box-inner'
+                        className='social-links-box-inner second'
                         direction={{ xs: 'row', md: 'column' }}
                         justifyContent='space-between'
                         alignItems='center'
