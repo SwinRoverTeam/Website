@@ -41,8 +41,8 @@ export default function About() {
           </Grid>
         </Grid>
         <Grid size={{ md: 3, xs: 12 }}>
-          <Box className="pie-chart-container">
-            <Grid container className="pie-diagram-container" justifyContent="center" alignItems="center">
+          <Box className="hero-pie-chart-container">
+            <Grid container className="hero-pie-diagram-container" justifyContent="center" alignItems="center">
              <PieChart
                 series={[
                     {
@@ -62,33 +62,33 @@ export default function About() {
                 slotProps={{legend:{hidden:true}}}
             />
             </Grid>
-            <Grid container spacing={1.5} padding={2} direction="column" className="pie-chart">
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-science"></div>
+            <Grid container spacing={1.5} padding={2} direction="column" className="hero-pie-chart">
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-science"></div>
                 Science
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-arm"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-arm"></div>
                 Arm
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-chassis"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-chassis"></div>
                 Chassis
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-ecs"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-ecs"></div>
                 ECS
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-logic"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-logic"></div>
                 Logic
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-social-media"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-social-media"></div>
                 Social Media
               </div>
-              <div className="pie-chart-label-container">
-                <div className="pie-chart-label-color pie-chart-finance"></div>
+              <div className="hero-pie-chart-label-container">
+                <div className="hero-pie-chart-label-color hero-pie-chart-finance"></div>
                 Finance
               </div>
             </Grid>

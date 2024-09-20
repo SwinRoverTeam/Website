@@ -204,6 +204,11 @@
 }
 
 @media screen and (max-width:1000px) {
+
+    .menu {
+        height:90svh !important;
+    }
+    
     .menu .sub-options > div {
         flex-direction: column;
         width:100%;

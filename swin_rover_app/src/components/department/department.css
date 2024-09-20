@@ -1,5 +1,5 @@
 /* wrap components on a flex-row */
-.container {
+.department-container {
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -11,19 +11,19 @@
 }
 
 /* for the image in a grid */
-.container img {
+.department-container img {
     height:45vh;
     object-fit: cover;
     border-radius: 1vw;
     width: 100%;
 }
 
-.container .overview-img {
+.department-container .overview-img {
     height:35vh;
 }
 
 /* each department and its description is a cell*/
-.cell {
+.department-cell {
     background-color: var(--grey-color);
     border-radius: 1vw;
     height:45vh;
@@ -38,39 +38,39 @@
     vertical-align: bottom;
 }
 
-.cell p {
+.department-cell p {
     font-size:var(--small-size);
     font-weight:300;
     padding:1.5vh 3vw;
     padding-bottom:3vh;
 }
 
-.cell h2 {
+.department-cell h2 {
     font-size:var(--medium-size);
     font-weight:400;
     padding:1vh 3vw;
     padding-top:3vh;
 }
 
-.container p {
+.department-container p {
     font-size:var(--small-size);
 }
 
 @media (max-width: 900px) {
-    .cell, .container img, .container .overview-img {
+    .department-cell, .department-container img, .department-container .overview-img {
         height: 25vh;
         border-radius:3vw;
     }
 
-    .container > div > div {
+    .department-container > div > div {
         padding-top:1.5vh !important;
     }
 
-    .container > div > div > div > p {
+    .department-container > div > div > div > p {
         margin-left:var(--medium-size);
     }
 
-    .container {
+    .department-container {
         padding-top:1vh;
     }
 

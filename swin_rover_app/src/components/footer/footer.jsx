@@ -35,7 +35,7 @@ function Footer () {
 					<ContactLinks />
 				</Stack>
 				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
-					<DotLattice />
+					<DotLattice/>
 				</Box>
 			</Stack>
 			<Policies />

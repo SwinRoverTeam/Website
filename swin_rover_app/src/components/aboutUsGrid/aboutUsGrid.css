@@ -67,7 +67,7 @@
     font-size:var(--medium-size);
 }
 
-.pie-chart-container {
+.hero-pie-chart-container {
     background-color: #FFFFFF;
     border-radius: 1vw;
     overflow: hidden;
@@ -77,57 +77,54 @@
     height: 81vh;
 }
 
-.pie-chart {
+.hero-pie-chart {
     color: black;
-    align-content: left;
-    overflow: auto;
     font-size: var(--medium-size);
     width:100%;
-    margin-top: 3vh;
 }
 
-.pie-diagram-container {
+.hero-pie-diagram-container {
     height:40%;
 }
 
-.pie-chart-label-container {
+.hero-pie-chart-label-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width:100%;
 }
 
-.pie-chart-label-color {
+.hero-pie-chart-label-color {
     height:3vh;
     aspect-ratio: 1/1;
     border-radius:0.25vw;
 }
 
-.pie-chart-science {
+.hero-pie-chart-science {
     background-color: var(--black-color);
 }
 
-.pie-chart-arm {
+.hero-pie-chart-arm {
     background-color: #DDDDDD;
 }
 
-.pie-chart-chassis {
+.hero-pie-chart-chassis {
     background-color: var(--red-color);
 }
 
-.pie-chart-ecs {
+.hero-pie-chart-ecs {
     background-color: #414FE8;
 }
 
-.pie-chart-logic {
+.hero-pie-chart-logic {
     background-color: #D9B638;
 }
 
-.pie-chart-social-media {
+.hero-pie-chart-social-media {
     background-color: #aa4db2;
 }
 
-.pie-chart-finance {
+.hero-pie-chart-finance {
     background-color: #25b7da;
 }
 
@@ -146,13 +143,14 @@
         border-radius: 3vw;
     }
 
-    .pie-chart-container {
+    .hero-pie-chart-container {
         height:75vh;
         border-radius: 3vw;
+        padding: 2vh 5vw;
     }
 
-    .pie-diagram-container {
-        height:45%;
+    .hero-pie-diagram-container {
+        height:50%;
     }
 
     .members-box {

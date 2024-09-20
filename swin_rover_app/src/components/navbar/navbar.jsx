@@ -85,7 +85,7 @@ function Navbar() {
                     <a onClick={() => toggleOptions('projects-options')} className="underline-button">
                         <p style={{ '--categories-number': 2 }}>Projects</p>
                     </a>
-                    <a onClick={() => goToUrl('/sponsors')} className="underline-button">
+                    <a onClick={() => goToUrl('/comingsoon')} className="underline-button">
                         <p style={{ '--categories-number': 3 }}>Sponsors</p>
                     </a>
                 </div>

@@ -8,7 +8,7 @@ function goToUrl(url) {
 
 function ProjectsGridCell({image_url, title, subtext, button_url}) {
     return (  
-      <div className="container">
+      <div className="projects-grid-container">
             <img src={image_url} alt=""></img>
             <div className="span_text_and_button">
               <div className="text_wrapper">

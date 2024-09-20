@@ -21,14 +21,14 @@ function AboutHero(){
                     <p className='title'>We're a multi-disciplinary team centered around one purpose: Space Innovation</p>
                 </Grid2>
                 <Grid2 size={2} className="dot-lattice-grid-container">
-                    <DotLattice />
+                    <DotLattice/>
                 </Grid2>
             </Grid2>
             <Grid2 
                 container
                 spacing={{xs: 2, md: 3}}
                 columns={8}
-                className='chunk'
+                className='about-chunk'
                 direction={{xs: 'column', md: 'row'}}
                 >
                     <Grid2 size={{xs: 8, md: 2}}>
@@ -39,7 +39,7 @@ function AboutHero(){
                         />
                     </Grid2>
                     <Grid2 size={{xs: 8, md: 2}}
-                        className='relative'
+                        className='about-relative'
                     >
                         <div className="member-count">
                             <h2>50+</h2>

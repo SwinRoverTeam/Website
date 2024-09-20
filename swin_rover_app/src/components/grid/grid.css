@@ -3,20 +3,22 @@
   display: flex;
   gap: 1.5vw;
   width:100vw;
-  padding:10vh 2.5vw;
+  padding:5vh 2.5vw;
 }
 
-/* flex element for the grid */
+.chunk {
+  border-bottom: none;
+}
 
 /* for the image in a grid */
-.container img {
+.projects-grid-container img {
   width:100%;
   height:60vh;
   object-fit: cover;
   border-radius: 1vw;
 }
 
-.container {
+.projects-grid-container {
   width:100%;
 }
 
@@ -24,6 +26,7 @@
   display:flex;
   justify-content: space-between;
   padding-top:3vh;
+  width:100%;
 }
 
 .span_text_and_button h3 {
@@ -45,7 +48,8 @@
 
   .grid {
     gap:5vh;
-    padding: 5vh 2.5vw;
+    padding: 10vh 2.5vw;
+    padding-bottom:5vh;
   }
 
   .span_text_and_button {
@@ -53,7 +57,8 @@
     gap:1.5vh;
   }
 
-  .container img {
+  .projects-grid-container img {
     border-radius: 3vw;
+    height:40vh;
   }
 }

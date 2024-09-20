@@ -2,3 +2,18 @@
     font-weight:300;
     font-size:var(--small-size);
 }
+
+.about-sponsor-us-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor-us-text {
+    text-align: right;
+}
+
+@media screen and (max-width:900px) {
+    .sponsor-us-text {
+        text-align: left;
+    }
+}

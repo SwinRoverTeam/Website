@@ -6,6 +6,7 @@ import ParallaxImg from '../parallaximg/parallaximg';
 import LinkRoundButton from '../roundbutton/linkroundbutton';
 import ExplorationImg from '../../assets/exploration-img.jpg';
 import RoverImg from '../../assets/DSC06200.png';
+import './mission.css'
 
 function goToUrl(url) {
     window.location.href=url; 
@@ -38,26 +39,26 @@ export default function Mission(){
             </Grid>
             <Grid 
                 container 
-                spacing={3} 
+                spacing={3}
+                columns={8} 
                 style={{marginLeft:"2.5vw", marginRight:"2.5vw", padding: '3vh 0'}} 
                 justifyContent="space-between" 
-                alignItems="left" 
+                className="about-sponsor-us-container"
+                alignItems='center'
                 direction={{ xs: 'column-reverse', md: 'row' }}
             >
-                <Grid>
+                <Grid size={{xs: 8, md: 3}}>
                       <LinkRoundButton text={'Sponsor us'} click_func={() => goToUrl('mailto:swinroverteam@swin.edu.au')}/>  
                 </Grid>
-                <Grid>
-                    <Box textAlign={{md: 'right', xs: 'left'}}>
-                        <p style={{fontSize: 'var(--small-size)'}}>
-                        The advancements in the national space industry make us very excited
-                            for the future of space exploration, and we want to contribute through
-                            student-led and developed robotics systems.
-                        </p>
-                    </Box>
+                <Grid size={{xs: 8, md: 5}}>
+                    <p style={{fontSize: 'var(--small-size)'}} className='sponsor-us-text'>
+                    The advancements in the national space industry make us very excited
+                        for the future of space exploration, and we want to contribute through
+                        student-led and developed robotics systems.
+                    </p>
                 </Grid>
             </Grid>
-            <Grid container borderBottom={2} borderColor={'var(--grey-color)'}>
+            <Grid container borderBottom={2} borderColor={'var(--grey-color)'} style={{paddingTop: '7.5vh'}}>
                 <Box style={{marginLeft:"2.5vw", marginRight:"2.5vw", paddingBottom: '3vh'}}>
                     <RedBulletText textSize='var(--headline-size)' text={'Our mission is to design, build, and test innovative robotic systems capable of performing complex tasks in extraterrestrial environments'}></RedBulletText>
                 </Box>

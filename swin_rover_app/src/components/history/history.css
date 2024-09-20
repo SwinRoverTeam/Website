@@ -1,5 +1,5 @@
 /* wrap components on a flex-row */
-.container {
+.history-container {
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -9,14 +9,14 @@
 }
 
 /* for the image in a grid */
-.container img {
+.history-container img {
     height:45vh;
     object-fit: cover;
     border-radius: 1vw;
     width: 100%;
 }
 
-.container .overview-img {
+.history-container .overview-img {
     height:35vh;
 }
 
@@ -62,25 +62,29 @@
     vertical-align: bottom;
 }
 
-.container p {
+.history-container p {
     font-size:var(--small-size);
 }
 
 @media (max-width: 900px) {
-    .cell, .container img, .container .overview-img {
-        height: 25vh;
+    .cell, .history-container img, .history-container .overview-img {
+        height: 40vh;
         border-radius:3vw;
     }
 
-    .container > div > div {
+    .history-container > div > div {
         padding-top:1.5vh !important;
     }
 
-    .container > div > div > div > p {
+    .white-bg {
+        height:25vh;
+    }
+
+    .history-container > div > div > div > p {
         margin-left:var(--medium-size);
     }
 
-    .container {
+    .history-container {
         padding-top:1vh;
     }
 

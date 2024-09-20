@@ -37,7 +37,7 @@ function createGrid(wrapper_grids) {
   console.log(size);
   
   let columns = Math.floor(window.innerWidth * 0.20 / size);
-  let rows = Math.floor(window.innerHeight * 0.25 / size);
+  let rows = Math.floor(window.innerHeight * 0.3 / size);
 
   
   wrapper_grids.forEach(wrapper_grid => {
@@ -52,7 +52,7 @@ function createGrid(wrapper_grids) {
 
 window.onresize = () => initialise();
 
-function DotLattice() {
+function DotLattice({}) {
     useEffect(() => {
 
         initialise();

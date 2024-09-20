@@ -15,7 +15,7 @@ import Mewing from '../../assets/mewing.jpg';
 function Engineering() {
   return (
     <>
-    <div className='container'>
+    <div className='department-container'>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={{xs: 3, md: 2}}>
           <Grid size={{ xs: 18, md: 3.5 }}>       
@@ -34,21 +34,21 @@ function Engineering() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2} style={{paddingTop: '3vh'}}>
           <Grid size={{ xs: 18, md: 3 }}>
-            <div className="cell">
+            <div className="department-cell">
               <h2>Science</h2>
               
               <p className='bottom-align'>Responsible for developing and integrating payloads responsible for sample collection and analysis.</p>
             </div>
           </Grid>
           <Grid size={{ xs: 18, md: 3 }}>
-            <div className="cell">
+            <div className="department-cell">
               <h2>Chassis</h2>
                 
                 <p className='bottom-align'>Responsible for building the chassis of the rover, from which other teams develop off.</p>
             </div>
           </Grid>
           <Grid size={{ xs: 18, md: 3 }}>
-            <div className="cell">
+            <div className="department-cell">
               <h2>Logic</h2>
               
               <p className='bottom-align'>Responsible for the development of all software to be used by the rover. Includes autonomous systems.</p>
@@ -65,14 +65,14 @@ function Engineering() {
             <img src={Outside} alt="Engineering team working"></img>
           </Grid>
           <Grid size={{ xs: 18, md: 3 }}>
-            <div className="cell">
+            <div className="department-cell">
               <h2>Arm</h2>
                 
                 <p className='bottom-align'>Responsible for the development of intricate systems revolving around the robotic arm of the rover.</p>
             </div>
           </Grid>
           <Grid size={{ xs: 18, md: 3 }}>
-            <div className="cell">
+            <div className="department-cell">
               <h2>ECS</h2>
               
               <p className='bottom-align'>Responsible for the seamless integration of all subsystems through system boards, etc.</p>
@@ -89,7 +89,7 @@ function Engineering() {
 function Business() {
     return (
       <>
-      <div className='container'>
+      <div className='department-container'>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={{xs: 3, md: 2}}>
             <Grid size={{ xs: 18, md: 3.5 }}>       
@@ -108,21 +108,21 @@ function Business() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2} style={{paddingTop: '3vh'}}>
             <Grid size={{ xs: 18, md: 3 }}>
-              <div className="cell">
+              <div className="department-cell">
                 <h2>Social Media</h2>
                 
                 <p className='bottom-align'>Responsible for sharing our achievements with online audiences through social media.</p>
               </div>
             </Grid>
             <Grid size={{ xs: 18, md: 3 }}>
-              <div className="cell">
+              <div className="department-cell">
                 <h2>Finance</h2>
                   
                   <p className='bottom-align'>Responsible for managing finances. This includes funding and budget allocation.</p>
               </div>
             </Grid>
             <Grid size={{ xs: 18, md: 3 }}>
-              <div className="cell">
+              <div className="department-cell">
                 <img src={Zach_Focus} alt="Engineering team working"></img>
               </div>
             </Grid>
@@ -134,13 +134,13 @@ function Business() {
             <Grid size={{ xs: 18, md: 3 }} className="empty">    
             </Grid>
             <Grid size={{ xs: 18, md: 6 }}>
-                <div className="cell">
+                <div className="department-cell">
                 <   img src={Chuckles} alt="Engineering team working"></img>
                 </div>
             </Grid>
             <Grid size={{ xs: 18, md: 3 }}>
-              <div className="cell">
-              <div className="cell">
+              <div className="department-cell">
+              <div className="department-cell">
                 <img src={Mewing} alt="Engineering team working"></img>
               </div>
               </div>
