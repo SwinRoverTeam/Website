@@ -20,6 +20,7 @@ import './home.css';
 import About from '../components/aboutUsGrid/aboutUsGrid';
 import { borderBottom } from '@mui/system';
 
+
 function goToUrl(url) {
     window.location.href=url;
 }
