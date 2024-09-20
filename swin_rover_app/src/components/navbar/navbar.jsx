@@ -99,7 +99,7 @@ function Navbar() {
                     <div className="projects-options">
                         <NavCard title="Building the First Swinburne Rover" number="0" img_src={RoverProjectImg} click_func={() => goToUrl('/comingsoon', true)} />
                         <NavCard title="Building the New Website" number="1" img_src={WebsiteMockup} click_func={() => goToUrl('/comingsoon', true)} />
-                        <LinkRoundButton text="View more" click_func={() => goToUrl('/comingsoon', true)} />
+                        <LinkRoundButton text="View more" click_func={() => goToUrl('/projects', true)} />
                     </div>
                 </div>
                 <div className="extra-links">

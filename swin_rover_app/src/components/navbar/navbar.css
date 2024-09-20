@@ -206,7 +206,7 @@
 @media screen and (max-width:1000px) {
 
     .menu {
-        height:90svh !important;
+        height:100svh !important;
     }
     
     .menu .sub-options > div {
@@ -238,10 +238,11 @@
     .navbar img {
         height:60%;
     }
-
-    .navbar .contacts {
-        flex-direction: column;
+    
+    .navbar .socials {
+        display: none;
     }
+
 
     .navbar .extra-links {
         align-items: flex-end;
