@@ -30,14 +30,14 @@ function Projects() {
                     <p className='title'>We take pride in the projects that we work on. Keep up to date with our projects.</p>
                 </Grid2>
                 <Grid2 size={2} className="dot-lattice-grid-container">
-                    <DotLattice />
+                    <DotLattice/>
                 </Grid2>
             </Grid2>
             <Grid2 
                 container
-                spacing={{xs: 2, md: 3}}
+                spacing={{xs: 1, md: 3}}
                 columns={8}
-                className='chunk'
+                className='projects-chunk'
                 direction={{xs: 'column', md: 'row'}}
                 >
                     <Grid2 size={{xs: 8, md: 2}}>

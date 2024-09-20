@@ -17,9 +17,10 @@
 }
 
 .top-element {
-    margin-top:17.5vh;
+    margin-top: 17.5vh;
+    padding: 3vh 2.5vw;
+    padding-top:0;
     align-items: flex-end;
-    padding: 3vh 2.5vw !important;
 }
 
 iframe {
@@ -30,7 +31,7 @@ iframe {
     opacity:0.9;
 }
 
-.chunk {
+.hero-chunk {
     padding: 7.5vh 2.5vw;
     border-bottom:2px solid var(--grey-color);
     border-top:none;
@@ -84,9 +85,9 @@ iframe {
     .spacing-box {
         display: none;
     }
-    video, .slideshow {
+    iframe, .slideshow {
         border-radius: 3vw;
-        height:25vh
+        height:27vh;
     }
 
     .chunk, .chunk-no-border {
@@ -95,7 +96,7 @@ iframe {
 
     .top-element {
         margin-top:12.5vh;
-        padding: 3vh 2.5vw;
+        padding-top:3vh;
     }
 
     .slideshow .indicator-dot {
@@ -109,5 +110,9 @@ iframe {
 
     .red-bullet-text {
         width:80%;
+    }
+
+    .hero-chunk {
+        padding: 5vh 2.5vw;
     }
 }

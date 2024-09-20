@@ -32,21 +32,21 @@ function Home() {
                 container
                 spacing={0}
                 columns={8}
-                className='chunk-no-border top-element'
+                className='hero-chunk-no-border top-element'
                 direction='row'
             >
                 <Grid2 size={{xs: 8, md: 6}}>
                     <p className='title'>We're creating the next generation of space innovators</p>
                 </Grid2>
                 <Grid2 size={2} className="dot-lattice-grid-container">
-                    <DotLattice />
+                    <DotLattice/>
                 </Grid2>
             </Grid2>
             <Grid2 
                 container
-                spacing={3}
+                spacing={{xs: 1.5, md: 3}}
                 columns={8}
-                className='chunk'
+                className='hero-chunk'
                 style={{borderBottom: 'none', borderTop: '2px solid var(--grey-color)', paddingTop: '3vh'}}
             >
                 <Grid2 size={{ xs:8, md:2 }}>
@@ -81,7 +81,7 @@ function Home() {
                 </Grid2>
             </Grid2>
             <Stack
-                className='chunk'
+                className='hero-chunk'
                 direction='row'
                 style={{paddingBottom:'5vh'}}
             >
@@ -91,11 +91,11 @@ function Home() {
                     fontClassName='headline'
                 />
                 <Box sx={{ display: { xs: 'none', lg: 'block' } }} >
-                    <DotLattice />
+                    <DotLattice/>
                 </Box>
             </Stack>
             <Grid2
-                className='chunk'
+                className='hero-chunk'
                 container
                 spacing={5}
                 direction={{ xs: 'column-reverse', lg: 'row'}}
@@ -136,14 +136,14 @@ function Home() {
                 container
                 spacing={2}
                 columns={4}
-                className='chunk'
+                className='hero-chunk'
                 direction='row'
                 style={{borderTop: 'none', borderBottom: 'none'}}
             >
                 <About />
             </Grid2>
             <Stack
-                className='chunk'
+                className='hero-chunk'
                 direction='row'
                 style={{paddingBottom:'5vh'}}
             >
@@ -163,7 +163,7 @@ function Home() {
             <ProjectsSlideshow />
 
             <Stack
-                className='chunk'
+                className='hero-chunk'
                 direction='row'
                 style={{padding: '5vh 2.5vw', paddingBottom:'5vh'}}
             >
@@ -179,7 +179,7 @@ function Home() {
             <Sponsors />
             
             <Stack
-                className='chunk'
+                className='hero-chunk'
                 direction='row'
                 style={{paddingBottom:'5vh'}}
             >
@@ -193,7 +193,7 @@ function Home() {
                 </Box>
             </Stack>
             <Stack
-                className='chunk'
+                className='hero-chunk'
                 direction={{ xs: 'column', md: 'row' }}
                 spacing={5}
                 style={{borderBottom: 'none'}}

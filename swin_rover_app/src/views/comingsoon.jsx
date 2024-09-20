@@ -22,7 +22,7 @@ function ComingSoon() {
                     <p className='title'>More features and content are coming to the website shortly.</p>
                 </Grid2>
                 <Grid2 size={2} className="dot-lattice-grid-container">
-                    <DotLattice />
+                    <DotLattice/>
                 </Grid2>
             </Grid2>
             <Box style={{paddingTop:'10vh'}}>
