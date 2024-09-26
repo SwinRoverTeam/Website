@@ -142,7 +142,7 @@
 }
 
 .menu .sub-options div .nav-card .image {
-    background: url('../../assets/srt-image.jpg');
+    background: url('assets/srt-image.jpg');
     width:30vw;
     height:35vh;
     background-size:cover;

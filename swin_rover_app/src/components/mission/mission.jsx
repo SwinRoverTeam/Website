@@ -4,8 +4,8 @@ import Grid from '@mui/material/Grid2';
 import RedBulletText from '../redBulletText/redBulletText';
 import ParallaxImg from '../parallaximg/parallaximg';
 import LinkRoundButton from '../roundbutton/linkroundbutton';
-import ExplorationImg from '../../assets/exploration-img.jpg';
-import RoverImg from '../../assets/DSC06200.png';
+import ExplorationImg from 'assets/exploration-img.jpg';
+import RoverImg from 'assets/DSC06200.png';
 import './mission.css'
 
 function goToUrl(url) {

@@ -3,14 +3,14 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
-import Focus_Img from '../../assets/focus.jpg';
-import Outside from '../../assets/outside.jpg'
-import Arm_Img from '../../assets/arm.jpg'
+import Focus_Img from 'assets/focus.jpg';
+import Outside from 'assets/outside.jpg'
+import Arm_Img from 'assets/arm.jpg'
 import './department.css'
 import RedBulletText from '../redBulletText/redBulletText';
-import Zach_Focus from '../../assets/zach.jpg';
-import Chuckles from '../../assets/chuckles.jpg';
-import Mewing from '../../assets/mewing.jpg';
+import Zach_Focus from 'assets/zach.jpg';
+import Chuckles from 'assets/chuckles.jpg';
+import Mewing from 'assets/mewing.jpg';
 
 function Engineering() {
   return (
