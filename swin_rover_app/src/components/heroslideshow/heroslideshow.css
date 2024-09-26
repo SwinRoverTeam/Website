@@ -56,21 +56,21 @@
 }
 
 .image-container .image:nth-child(1) {
-    background:url('../../assets/slideshow-img-1.jpg');
+    background:url('assets/slideshow-img-1.jpg');
     background-size:120%;
     background-position:50% 50%;
     background-repeat:no-repeat;
 }
 
 .image-container .image:nth-child(2) {
-    background:url('../../assets/slideshow-img-2.jpg');
+    background:url('assets/slideshow-img-2.jpg');
     background-size:120%;
     background-position:50% 50%;
     background-repeat:no-repeat;
 }
 
 .image-container .image:nth-child(3) {
-    background:url('../../assets/slideshow-img-3.jpg');
+    background:url('assets/slideshow-img-3.jpg');
     background-size:120%;
     background-position:50% 50%;
     background-repeat:no-repeat;
