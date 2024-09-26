@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './roundbutton.css'
-import linkIconBlack from 'assets/link-icon-black.svg'
-import linkIconWhite from 'assets/link-icon-white.svg'
+import linkIconBlack from '../../assets/link-icon-black.svg'
+import linkIconWhite from '../../assets/link-icon-white.svg'
 
 function LinkRoundButton({ text, style }) {
     return (

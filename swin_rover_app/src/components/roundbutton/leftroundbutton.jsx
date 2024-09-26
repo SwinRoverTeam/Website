@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './roundbutton.css'
-import linkIconBlack from 'assets/left-icon-black.svg'
-import linkIconWhite from 'assets/left-icon-white.svg'
+import linkIconBlack from '../../assets/left-icon-black.svg'
+import linkIconWhite from '../../assets/left-icon-white.svg'
 
 function LeftRoundButton({ text, style, click_func}) {
     return (

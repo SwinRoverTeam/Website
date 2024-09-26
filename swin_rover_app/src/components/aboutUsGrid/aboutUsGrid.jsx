@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { PieChart } from '@mui/x-charts/PieChart';
 import Grid from '@mui/material/Grid2';
 import LinkRoundButton from '../roundbutton/linkroundbutton';
-import Image from 'assets/Rectangle 17.png';
+import Image from '../../assets/Rectangle 17.png';
 import './aboutUsGrid.css'; 
 
 function goToUrl(url) {

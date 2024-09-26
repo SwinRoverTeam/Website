@@ -2,8 +2,8 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import './footer.css'
-import dotMatrix from 'assets/test_dot_matrix.png'
-import SRTLogo from 'assets/srt-logo.svg'
+import dotMatrix from '../../assets/test_dot_matrix.png'
+import SRTLogo from '../../assets/srt-logo.svg'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'

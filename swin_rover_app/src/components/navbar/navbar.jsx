@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import './navbar.css';
 import LinkRoundButton from '../roundbutton/linkroundbutton';
 import UnderlineButton from '../underlinebutton/underlinebutton';
-import navIconBlack from 'assets/nav-icon-black.svg';
-import navIconWhite from 'assets/nav-icon-white.svg';
-import SRTLogo from 'assets/srt-logo.svg';
-import TeamImage from 'assets/srt-image.jpg';
-import MissionImg from 'assets/mission-thumbnail.jpg';
-import CodeOfConductImg from 'assets/code-of-conduct-thumbnail.jpg';
-import RoverProjectImg from 'assets/featured-project-img.jpg';
-import WebsiteMockup from 'assets/macbook-mockup.jpg';
+import navIconBlack from '../../assets/nav-icon-black.svg';
+import navIconWhite from '../../assets/nav-icon-white.svg';
+import SRTLogo from '../../assets/srt-logo.svg';
+import TeamImage from '../../assets/srt-image.jpg';
+import MissionImg from '../../assets/mission-thumbnail.jpg';
+import CodeOfConductImg from '../../assets/code-of-conduct-thumbnail.jpg';
+import RoverProjectImg from '../../assets/featured-project-img.jpg';
+import WebsiteMockup from '../../assets/macbook-mockup.jpg';
 
 function Navbar() {
     const navigate = useNavigate();

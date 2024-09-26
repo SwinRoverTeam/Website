@@ -3,10 +3,10 @@ import './projectsslideshow.css'
 import LinkRoundButton from '../roundbutton/linkroundbutton';
 import RightRoundButton from '../roundbutton/rightroundbutton';
 import LeftRoundButton from '../roundbutton/leftroundbutton';
-import FirstHorizontalImg from 'assets/project-1-1.jpg';
-import FirstVerticalImg from 'assets/project-1-2.jpg';
-import SecondHorizontalImg from 'assets/macbook-mockup.jpg';
-import SecondVerticalImg from 'assets/iphone-mockup.jpg';
+import FirstHorizontalImg from '../../assets/project-1-1.jpg';
+import FirstVerticalImg from '../../assets/project-1-2.jpg';
+import SecondHorizontalImg from '../../assets/macbook-mockup.jpg';
+import SecondVerticalImg from '../../assets/iphone-mockup.jpg';
 
 let projects_slide_number = 0;
 let numSlides = 2;

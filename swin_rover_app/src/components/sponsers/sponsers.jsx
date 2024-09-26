@@ -1,14 +1,14 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import dotMatrix from 'assets/test_dot_matrix.png';
+import dotMatrix from '../../assets/test_dot_matrix.png';
 import './sponsers.css';
-import Altium from 'assets/altium-logo.svg';
-import Leap from 'assets/leap-logo.svg';
-import Ansys from 'assets/ansys-logo.svg';
-import Bossard from 'assets/bossard-logo.svg';
-import Goldsmith from 'assets/goldsmith-logo.svg';
-import linkIconWhite from 'assets/link-icon-white.svg'
+import Altium from '../../assets/altium-logo.svg';
+import Leap from '../../assets/leap-logo.svg';
+import Ansys from '../../assets/ansys-logo.svg';
+import Bossard from '../../assets/bossard-logo.svg';
+import Goldsmith from '../../assets/goldsmith-logo.svg';
+import linkIconWhite from '../../assets/link-icon-white.svg'
 
 function Sponsors () {
     return(
