@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './slideshow.css'
 
-function Slideshow(){
+function Slideshow() {
     return (
         <div class="slideshow">
             <div class="indicator">
@@ -18,8 +18,8 @@ function Slideshow(){
                 <a onclick="previousImage();" class="round-button .previous-button">
                     <div class="button-info">
                         <div class="button-icon-container left">
-                            <img class="button-icon" src="left-icon-black.svg" alt=""/>
-                            <img class="button-icon" src="left-icon-white.svg" alt=""/>
+                            <img class="button-icon" src="left-icon-black.svg" alt="" />
+                            <img class="button-icon" src="left-icon-white.svg" alt="" />
                         </div>
                         <div class="button-text-container">
                             <p class="button-text">Previous photo</p>
@@ -30,8 +30,8 @@ function Slideshow(){
                 <a onclick="nextImage();" class="round-button next-button">
                     <div class="button-info">
                         <div class="button-icon-container right">
-                            <img class="button-icon" src="right-icon-black.svg" alt=""/>
-                            <img class="button-icon" src="right-icon-white.svg" alt=""/>
+                            <img class="button-icon" src="right-icon-black.svg" alt="" />
+                            <img class="button-icon" src="right-icon-white.svg" alt="" />
                         </div>
                         <div class="button-text-container">
                             <p class="button-text">Next photo</p>

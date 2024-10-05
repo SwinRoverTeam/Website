@@ -16,18 +16,18 @@ let projects_links = ['/comingsoon', '/comingsoon'];
 let tag_titles = ['Featured', 'Latest']
 
 function goToUrl(url) {
-    window.location.href=url;
+    window.location.href = url;
 }
 function nextSlide() {
     projects_slide_number = projects_slide_number + 1;
     hideText();
-    setTimeout(() => {displaySlides()}, 500);
+    setTimeout(() => { displaySlides() }, 500);
 }
 
 function previousSlide() {
     projects_slide_number = projects_slide_number - 1;
     hideText();
-    setTimeout(() => {displaySlides()}, 500);
+    setTimeout(() => { displaySlides() }, 500);
 }
 
 function hideText() {
@@ -64,12 +64,12 @@ function displaySlides() {
 
 }
 
-function ProjectCard({landscape_img, vertical_img, classes}) {
+function ProjectCard({ landscape_img, vertical_img, classes }) {
     return (
         <div className={classes}>
             <div className="images">
-            <img src={landscape_img} alt="" className="wide-image" />
-            <img src={vertical_img} alt="" className="vertical-image" />
+                <img src={landscape_img} alt="" className="wide-image" />
+                <img src={vertical_img} alt="" className="vertical-image" />
             </div>
         </div>
     );
@@ -80,27 +80,27 @@ function ProjectsSlideshow() {
         <div className="projects-slideshow">
             <div className="sidebar">
                 <div className="tag">
-                <div className="dot"></div>
-                <div className="tag-text">
-                    <p>Featured</p>
-                </div>
+                    <div className="dot"></div>
+                    <div className="tag-text">
+                        <p>Featured</p>
+                    </div>
                 </div>
                 <div className="controls">
-                <LeftRoundButton text="Previous" click_func={previousSlide}/>
-                <RightRoundButton text="Next" click_func={nextSlide}/>
+                    <LeftRoundButton text="Previous" click_func={previousSlide} />
+                    <RightRoundButton text="Next" click_func={nextSlide} />
                 </div>
             </div>
             <div className="projects-container">
                 <div className="text">
-                <div className="text-container">
-                    <div className="subtitle">
-                    <p>ARCh Competition 2024</p>
+                    <div className="text-container">
+                        <div className="subtitle">
+                            <p>ARCh Competition 2024</p>
+                        </div>
+                        <div>
+                            <h1>Building the first Swinburne Rover</h1>
+                        </div>
                     </div>
-                    <div>
-                    <h1>Building the first Swinburne Rover</h1>
-                    </div>
-                </div>
-                <LinkRoundButton text="View project" click_func={() => goToUrl('/comingsoon')}/>
+                    <LinkRoundButton text="View project" click_func={() => goToUrl('/comingsoon')} />
                 </div>
                 <div className="projects-container">
                     <ProjectCard landscape_img={FirstHorizontalImg} vertical_img={FirstVerticalImg} classes="project active" />

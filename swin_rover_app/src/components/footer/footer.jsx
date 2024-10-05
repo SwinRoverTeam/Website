@@ -11,15 +11,15 @@ import DotLattice from '../dotlattice/dotlattice';
 
 
 function goToUrl(url) {
-	window.location.href=url;
+	window.location.href = url;
 }
 
-function Footer () {
+function Footer() {
 	return (
 		<footer>
-			<Banner />  
+			<Banner />
 			<Stack
-				direction={{ xs:'column-reverse', md: 'row' }}
+				direction={{ xs: 'column-reverse', md: 'row' }}
 				spacing={10}
 				className='chunk'
 			>
@@ -27,7 +27,7 @@ function Footer () {
 				<Stack
 					direction='row'
 					spacing={{ xs: 0, md: 10 }}
-					justifyContent={{ xs: 'space-evenly', lg: 'none'}}
+					justifyContent={{ xs: 'space-evenly', lg: 'none' }}
 					className="links-container"
 				>
 					<WebLinks />
@@ -35,7 +35,7 @@ function Footer () {
 					<ContactLinks />
 				</Stack>
 				<Box sx={{ display: { xs: 'none', xl: 'block' } }}>
-					<DotLattice/>
+					<DotLattice />
 				</Box>
 			</Stack>
 			<Policies />
@@ -45,16 +45,16 @@ function Footer () {
 
 
 
-function Banner () {
+function Banner() {
 	return (
 		<Stack
-			direction={{ xs: 'column', md: 'row'}}
+			direction={{ xs: 'column', md: 'row' }}
 			alignItems='center'
 			className='heading-box chunk'
 			spacing={8}
 		>
 
-			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo'/>
+			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo' />
 			<Box display={{ xs: 'none', md: 'block' }}>
 				{/* <h2 className='red-bullet'>
 					Let's push the boundaries of what we can achieve together.
@@ -68,7 +68,7 @@ function Banner () {
 	);
 };
 
-function Respects () {
+function Respects() {
 	return (
 		<Stack
 			direction='column'
@@ -76,7 +76,7 @@ function Respects () {
 			className='inter-paragraph acknowledgements'
 		>
 			<p>
-				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on, 
+				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on,
 				the Wurundjeri People of the Kulin Nation.
 			</p>
 			<p>
@@ -86,7 +86,7 @@ function Respects () {
 	);
 };
 
-function WebLinks () {
+function WebLinks() {
 	return (
 		<Stack
 			direction='column'
@@ -119,7 +119,7 @@ function WebLinks () {
 	);
 };
 
-function SocialLinks () {
+function SocialLinks() {
 	return (
 		<Stack
 			direction='column'
@@ -140,7 +140,7 @@ function SocialLinks () {
 	);
 };
 
-function ContactLinks () {
+function ContactLinks() {
 	return (
 		<Stack
 			direction='column'
@@ -169,7 +169,7 @@ function ContactLinks () {
 	);
 };
 
-function Policies () {
+function Policies() {
 	return (
 		<Stack
 			direction='row'

@@ -10,50 +10,50 @@
 
 /* for the image in a grid */
 .history-container img {
-    height:45vh;
+    height: 45vh;
     object-fit: cover;
     border-radius: 1vw;
     width: 100%;
 }
 
 .history-container .overview-img {
-    height:35vh;
+    height: 35vh;
 }
 
 /* each department and its description is a cell*/
 .cell {
     background-color: var(--dark-grey-color);
     border-radius: 1vw;
-    height:45vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .cell p {
-    font-size:var(--small-size);
-    font-weight:300;
-    padding:1.5vh 2vw;
-    padding-bottom:3vh;
+    font-size: var(--small-size);
+    font-weight: 300;
+    padding: 1.5vh 2vw;
+    padding-bottom: 3vh;
 }
 
 .cell h1 {
-    font-weight:400;
-    font-size:var(--title-size);
-    padding:1vh 2vw;
-    padding-top:3vh;
+    font-weight: 400;
+    font-size: var(--title-size);
+    padding: 1vh 2vw;
+    padding-top: 3vh;
 }
 
 .cell h2 {
-    font-size:var(--medium-size);
-    font-weight:400;
-    padding:1vh 2vw;
-    padding-top:3vh;
+    font-size: var(--medium-size);
+    font-weight: 400;
+    padding: 1vh 2vw;
+    padding-top: 3vh;
 }
 
 /* span text vertically*/
 .bottom-align {
-    border-top: 2px solid rgba(255,255,255,0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
     vertical-align: bottom;
 }
 
@@ -63,32 +63,35 @@
 }
 
 .history-container p {
-    font-size:var(--small-size);
+    font-size: var(--small-size);
 }
 
 @media (max-width: 900px) {
-    .cell, .history-container img, .history-container .overview-img {
+
+    .cell,
+    .history-container img,
+    .history-container .overview-img {
         height: 40vh;
-        border-radius:3vw;
+        border-radius: 3vw;
     }
 
-    .history-container > div > div {
-        padding-top:1.5vh !important;
+    .history-container>div>div {
+        padding-top: 1.5vh !important;
     }
 
     .white-bg {
-        height:25vh;
+        height: 25vh;
     }
 
-    .history-container > div > div > div > p {
-        margin-left:var(--medium-size);
+    .history-container>div>div>div>p {
+        margin-left: var(--medium-size);
     }
 
     .history-container {
-        padding-top:1vh;
+        padding-top: 1vh;
     }
 
     .empty {
-        display:none;
+        display: none;
     }
 }

@@ -3,90 +3,96 @@
 .title {
     font-size: var(--title-size);
     width: 95%;
-    line-height:1;
+    line-height: 1;
 }
+
 .headline {
     font-size: var(--headline-size);
 }
+
 .medium-text {
     font-size: var(--medium-size);
 }
+
 .small-text {
     font-size: var(--small-size);
 }
+
 .about-chunk {
     padding: 1.5vh 5vw 4vh;
-    padding-left:2.5vw;
-    padding-right:2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     border-top: 1px solid var(--grey-color);
 }
+
 .chunk-no-border {
     padding: 1.5vh 5vw 4vh;
-    padding-left:2.5vw;
-    padding-right:2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
 .top-element {
     margin-top: 17.5vh;
     padding: 3vh 2.5vw;
-    padding-top:0;
+    padding-top: 0;
     align-items: flex-end;
 }
 
 .width-100 {
     width: 100%;
 }
+
 .about-relative {
     position: relative;
     height: 45vh;
 }
 
 .chart-container {
-    background:white;
-    height:40vh;
-    border-radius:1vw;
+    background: white;
+    height: 40vh;
+    border-radius: 1vw;
 }
 
 .member-count {
-    width:100%;
-    height:40vh;
+    width: 100%;
+    height: 40vh;
     border-radius: 1vw;
-    background:var(--red-color);
+    background: var(--red-color);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 .member-count h2 {
-    padding:3vh 2vw;
-    font-size:var(--headline-size);
-    font-weight:400;
+    padding: 3vh 2vw;
+    font-size: var(--headline-size);
+    font-weight: 400;
 }
 
 .member-count p {
     padding: 3vh 2vw;
-    border-top:2px solid rgba(255,255,255,0.3);
-    font-size:var(--medium-size);
-    padding-top:2vh;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: var(--medium-size);
+    padding-top: 2vh;
 }
 
 .chart-container .pie-chart {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:3vh 3vw;
-    width:100%;
-    height:100%;
-    font-size:var(--small-size) !important;
+    padding: 3vh 3vw;
+    width: 100%;
+    height: 100%;
+    font-size: var(--small-size) !important;
 }
 
 .chart-container p {
-    color:var(--black-color);
+    color: var(--black-color);
     font-size: var(--small-size);
 }
 
-.pie-chart > div:first-child {
-    width:50%;
+.pie-chart>div:first-child {
+    width: 50%;
     height: 100%;
 }
 
@@ -99,61 +105,66 @@
 .key {
     display: flex;
     flex-direction: column;
-    gap:1.5vh;
+    gap: 1.5vh;
 }
 
 .color-indicator {
-    height:3vh;
+    height: 3vh;
     aspect-ratio: 1/1;
-    border-radius:0.25vw;
+    border-radius: 0.25vw;
 }
 
 @media (max-width: 900px) {
     .social-links-box-inner {
         padding: 3vh 12vw;
     }
+
     .social-links-box-inner.first {
         border-radius: 3em 3em 0 0;
     }
+
     .social-links-box-inner.last {
         border-radius: 0 0 3em 3em;
     }
+
     .spacing-box {
         display: none;
     }
 }
 
 @media screen and (max-width:900px) {
-    .chart-container, .member-count {
-        height:25vh;
+
+    .chart-container,
+    .member-count {
+        height: 25vh;
         border-radius: 3vw;
     }
 
     .chart-container {
-        height:32vh;
+        height: 32vh;
     }
 
     .member-count {
-        height:15vh;
+        height: 15vh;
         align-items: center;
     }
 
     .member-count p {
-        padding-right:10vw;
-        border-top:none;
-        margin-top:1.5vh;
+        padding-right: 10vw;
+        border-top: none;
+        margin-top: 1.5vh;
     }
 
     .member-count h2 {
-        padding-left:10vw;
+        padding-left: 10vw;
     }
 
     .key {
-        gap:0.5vh;
+        gap: 0.5vh;
     }
 
     .key-indicator .color-indicator {
-        border-radius:1vw;
+        border-radius: 1vw;
     }
 
     .member-count {
@@ -161,16 +172,16 @@
     }
 
     .about-relative {
-        height:max-content;
+        height: max-content;
     }
 
     .chunk-no-border {
-        margin-top:12.5vh;
+        margin-top: 12.5vh;
     }
 
     .title {
-        margin-bottom:0;
-        width:100%;
+        margin-bottom: 0;
+        width: 100%;
     }
 
     .featured-project .tag {
@@ -182,15 +193,15 @@
     }
 
     .featured-project h2 {
-        width:60%;
+        width: 60%;
     }
 
     .container img {
-        height:30vh;
+        height: 30vh;
     }
 
     .top-element {
-        margin-top:12.5vh;
-        padding-top:3vh;
+        margin-top: 12.5vh;
+        padding-top: 3vh;
     }
 }

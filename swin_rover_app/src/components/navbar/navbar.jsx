@@ -27,7 +27,7 @@ function Navbar() {
         navigate(url); // Navigate to the clicked URL
         toggleMenu();  // Close the menu after navigation
     }
-    
+
 
     function toggleMenu() {
         document.querySelector('.navbar .menu').classList.toggle('active');

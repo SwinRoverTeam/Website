@@ -6,27 +6,27 @@
     flex-wrap: wrap;
     flex: 1;
     padding: 3vh 2.5vw;
-    margin:5vh 0;
-    border-top:2px solid var(--grey-color);
+    margin: 5vh 0;
+    border-top: 2px solid var(--grey-color);
 }
 
 /* for the image in a grid */
 .department-container img {
-    height:45vh;
+    height: 45vh;
     object-fit: cover;
     border-radius: 1vw;
     width: 100%;
 }
 
 .department-container .overview-img {
-    height:35vh;
+    height: 35vh;
 }
 
 /* each department and its description is a cell*/
 .department-cell {
     background-color: var(--grey-color);
     border-radius: 1vw;
-    height:45vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,47 +34,50 @@
 
 /* span text vertically*/
 .bottom-align {
-    border-top: 2px solid rgba(255,255,255,0.1);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
     vertical-align: bottom;
 }
 
 .department-cell p {
-    font-size:var(--small-size);
-    font-weight:300;
-    padding:1.5vh 3vw;
-    padding-bottom:3vh;
+    font-size: var(--small-size);
+    font-weight: 300;
+    padding: 1.5vh 3vw;
+    padding-bottom: 3vh;
 }
 
 .department-cell h2 {
-    font-size:var(--medium-size);
-    font-weight:400;
-    padding:1vh 3vw;
-    padding-top:3vh;
+    font-size: var(--medium-size);
+    font-weight: 400;
+    padding: 1vh 3vw;
+    padding-top: 3vh;
 }
 
 .department-container p {
-    font-size:var(--small-size);
+    font-size: var(--small-size);
 }
 
 @media (max-width: 900px) {
-    .department-cell, .department-container img, .department-container .overview-img {
+
+    .department-cell,
+    .department-container img,
+    .department-container .overview-img {
         height: 25vh;
-        border-radius:3vw;
+        border-radius: 3vw;
     }
 
-    .department-container > div > div {
-        padding-top:1.5vh !important;
+    .department-container>div>div {
+        padding-top: 1.5vh !important;
     }
 
-    .department-container > div > div > div > p {
-        margin-left:var(--medium-size);
+    .department-container>div>div>div>p {
+        margin-left: var(--medium-size);
     }
 
     .department-container {
-        padding-top:1vh;
+        padding-top: 1vh;
     }
 
     .empty {
-        display:none;
+        display: none;
     }
 }

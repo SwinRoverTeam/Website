@@ -2,11 +2,11 @@ let cursor = document.querySelector('.cursor');
 let links = document.querySelectorAll('a');
 let tile_grids = document.querySelectorAll('.dot-lattice');
 
-window.addEventListener('mousemove', function(e) {
+window.addEventListener('mousemove', function (e) {
     cursor.animate({
-        top:e.pageY + 'px',
-        left:e.pageX + 'px'
-    }, {duration:1000, fill:'forwards'});
+        top: e.pageY + 'px',
+        left: e.pageX + 'px'
+    }, { duration: 1000, fill: 'forwards' });
 });
 
 links.forEach(link => {
@@ -27,21 +27,21 @@ function calculateDistance(elem, mouseX, mouseY) {
 
     // console.log(Math.floor(Math.sqrt(Math.pow(mouseX - (element_rect.left+(elem.clientWidth/2)), 2) + Math.pow(mouseY - (element_rec.top+(elem.clientHeight/2)), 2))));
     // console.log(mouseY);
-    return Math.floor(Math.sqrt(Math.pow(mouseX - (element_rect.left+(elem.clientWidth/2)), 2) + Math.pow((mouseY % window.innerHeight) - ((element_rect.top % window.innerHeight)+(elem.clientHeight/2)), 2)));
+    return Math.floor(Math.sqrt(Math.pow(mouseX - (element_rect.left + (elem.clientWidth / 2)), 2) + Math.pow((mouseY % window.innerHeight) - ((element_rect.top % window.innerHeight) + (elem.clientHeight / 2)), 2)));
 }
 
 tile_grids.forEach(tile_grid => {
-    tile_grid.addEventListener('mousemove', function(e) {
+    tile_grid.addEventListener('mousemove', function (e) {
         let tiles = tile_grid.querySelectorAll('.tile');
         tiles.forEach(tile => {
             mX = e.pageX;
             mY = e.pageY;
             distance = calculateDistance(tile, mX, mY);
-            size = 50/distance;
+            size = 50 / distance;
             if (size < 1) {
                 size = 3;
             }
-    
+
             if (size > 3) {
                 size = 1;
             }
@@ -49,7 +49,7 @@ tile_grids.forEach(tile_grid => {
             tile.style.transform = 'scale(' + size + ')';
         })
     });
-    tile_grid.addEventListener('mouseleave', function(e) {
+    tile_grid.addEventListener('mouseleave', function (e) {
         let tiles = tile_grid.querySelectorAll('.tile');
         tiles.forEach(tile => {
             tile.style.transform = 'scale(1)';

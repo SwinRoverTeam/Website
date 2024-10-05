@@ -2,7 +2,7 @@
     height: 40vh;
     background-color: var(--dark-grey-color);
     border-radius: 1vw;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 
@@ -10,28 +10,28 @@
 
 .about-title {
     font-size: var(--title-size);
-    padding:2vh 2vw;
+    padding: 2vh 2vw;
 }
 
 .about-subtitle {
     font-size: var(--medium-size);
-    padding:2vh 2vw;
-    padding-bottom:3vh;
-    border-top: 2px solid rgba(255,255,255,0.1);
+    padding: 2vh 2vw;
+    padding-bottom: 3vh;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .members-box {
     height: 40vh;
     background-color: #DA3838;
     border-radius: 1vw;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .members-title {
     font-size: var(--title-size);
-    padding:2vh 2vw;
+    padding: 2vh 2vw;
 }
 
 .team-box {
@@ -64,7 +64,7 @@
 }
 
 .culture-text {
-    font-size:var(--medium-size);
+    font-size: var(--medium-size);
 }
 
 .hero-pie-chart-container {
@@ -80,24 +80,24 @@
 .hero-pie-chart {
     color: black;
     font-size: var(--medium-size);
-    width:100%;
+    width: 100%;
 }
 
 .hero-pie-diagram-container {
-    height:40%;
+    height: 40%;
 }
 
 .hero-pie-chart-label-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
 }
 
 .hero-pie-chart-label-color {
-    height:3vh;
+    height: 3vh;
     aspect-ratio: 1/1;
-    border-radius:0.25vw;
+    border-radius: 0.25vw;
 }
 
 .hero-pie-chart-science {
@@ -129,13 +129,15 @@
 }
 
 @media screen and (max-width:900px) {
-    .about-box, .members-box {
-        height:20vh;
+
+    .about-box,
+    .members-box {
+        height: 20vh;
         border-radius: 3vw;
     }
 
     .team-box {
-        height:30vh;
+        height: 30vh;
         border-radius: 3vw;
     }
 
@@ -144,20 +146,20 @@
     }
 
     .hero-pie-chart-container {
-        height:75vh;
+        height: 75vh;
         border-radius: 3vw;
         padding: 2vh 5vw;
     }
 
     .hero-pie-diagram-container {
-        height:50%;
+        height: 50%;
     }
 
     .members-box {
         flex-direction: row;
         align-items: center;
-        padding:2vh 5vw;
-        height:15vh;
+        padding: 2vh 5vw;
+        height: 15vh;
     }
 
     .members-box .about-subtitle {

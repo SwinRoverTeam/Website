@@ -3,15 +3,18 @@
 .title {
     font-size: var(--title-size);
     width: 95%;
-    line-height:1;
-    font-weight:400;
+    line-height: 1;
+    font-weight: 400;
 }
+
 .headline {
     font-size: var(--headline-size);
 }
+
 .medium-text {
     font-size: var(--medium-size);
 }
+
 .small-text {
     font-size: var(--small-size);
 }
@@ -19,22 +22,22 @@
 .top-element {
     margin-top: 17.5vh;
     padding: 3vh 2.5vw;
-    padding-top:0;
+    padding-top: 0;
     align-items: flex-end;
 }
 
 iframe {
-    width:100%;
-    height:45vh;
+    width: 100%;
+    height: 45vh;
     object-fit: cover;
-    border-radius:1vw;
-    opacity:0.9;
+    border-radius: 1vw;
+    opacity: 0.9;
 }
 
 .hero-chunk {
     padding: 7.5vh 2.5vw;
-    border-bottom:2px solid var(--grey-color);
-    border-top:none;
+    border-bottom: 2px solid var(--grey-color);
+    border-top: none;
 }
 
 .chunk-no-border {
@@ -44,19 +47,23 @@ iframe {
 .width-100 {
     width: 100%;
 }
+
 .relative {
     position: relative;
     height: max-content;
 }
+
 .centre-content {
     height: 100%;
     display: flex;
     align-items: flex-end;
 }
+
 .social-links-box {
     height: 40vh;
     width: 100%;
 }
+
 .social-links-box-inner {
     width: 100%;
     border: 2px solid var(--grey-color);
@@ -65,9 +72,11 @@ iframe {
     flex-direction: column;
     align-items: center;
 }
+
 .social-links-box-inner.first {
     border-radius: 2vw 0 0 2vw;
 }
+
 .social-links-box-inner.last {
     border-radius: 0 2vw 2vw 0;
 }
@@ -76,6 +85,7 @@ iframe {
     height: 40vh;
     width: 100%;
 }
+
 .social-links-box-inner {
     width: 100%;
     border: 2px solid var(--grey-color);
@@ -88,6 +98,7 @@ iframe {
 .social-links-box-inner.first {
     border-radius: 2vw 0 0 2vw;
 }
+
 .social-links-box-inner.last {
     border-radius: 0 2vw 2vw 0;
 }
@@ -96,42 +107,48 @@ iframe {
     .social-links-box-inner.second {
         padding: 3vh 12vw;
     }
+
     .social-links-box-inner.first {
         border-radius: 3vw 3vw 0 0;
         padding: 3vh 12vw;
     }
+
     .social-links-box-inner.last {
         border-radius: 0 0 3vw 3vw;
         padding: 3vh 12vw;
     }
+
     .spacing-box {
         display: none;
     }
-    iframe, .slideshow {
+
+    iframe,
+    .slideshow {
         border-radius: 3vw;
-        height:27vh;
+        height: 27vh;
     }
 
-    .chunk, .chunk-no-border {
-        padding:5vh 2.5vw;
+    .chunk,
+    .chunk-no-border {
+        padding: 5vh 2.5vw;
     }
 
     .top-element {
-        margin-top:12.5vh;
-        padding-top:3vh;
+        margin-top: 12.5vh;
+        padding-top: 3vh;
     }
 
     .slideshow .indicator-dot {
-        width:3vw;
-        height:3vw;
+        width: 3vw;
+        height: 3vw;
     }
 
     footer {
-        padding-top:5vh;
+        padding-top: 5vh;
     }
 
     .red-bullet-text {
-        width:80%;
+        width: 80%;
     }
 
     .hero-chunk {

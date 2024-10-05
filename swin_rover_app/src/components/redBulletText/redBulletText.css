@@ -1,18 +1,21 @@
 .red-bullet-outer {
-	display: flex;
-	flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
 }
+
 .red-bullet-inner {
     width: 0.5em;
 }
+
 .red-bullet-inner span {
-	font-size: 3rem;
-	color: var(--red-color);
+    font-size: 3rem;
+    color: var(--red-color);
     margin-top: -2em;
 }
+
 .red-bullet-text {
     margin-left: 2rem;
     margin-top: 0.2em;
-    width:90%;
+    width: 90%;
 }

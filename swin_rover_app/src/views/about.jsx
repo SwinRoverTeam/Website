@@ -7,18 +7,18 @@ import CodeOfConduct from '../components/codeOfConduct/codeOfConduct'
 import History from '../components/history/history'
 import { Box } from '@mui/system'
 
-export default function About(){
-    return(
+export default function About() {
+    return (
         <>
-            <Navbar/>
+            <Navbar />
             <Box marginY={3}>
-                <Hero/>
+                <Hero />
             </Box>
-            <Mission/>
+            <Mission />
             <History />
-            <Departments/>
-            <CodeOfConduct/>
-            <Footer/>
+            <Departments />
+            <CodeOfConduct />
+            <Footer />
         </>
     )
 }
