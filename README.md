@@ -41,6 +41,13 @@ npm run preview
 
 Arranged, short term to long term.
 
+- Reduce git clutter
+    - follow above rules
+
+- Reduce code complexity
+    - begin moving to react and typescript with tailwind for css
+    - reduce the amount of code required to add content
+
 - fill in Sponsors page
 - fix broken links
 - make site look better on desktop
@@ -51,13 +58,6 @@ Arranged, short term to long term.
 - page for system overview
 - showcase page to show off designs and productivity
 - news page for latest updates
-
-- Reduce git clutter
-    - follow above rules
-
-- Reduce code complexity
-    - begin moving to react and typescript with tailwind for css
-    - reduce the amount of code required to add content
 
 ### Directory map
 ```
