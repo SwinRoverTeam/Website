@@ -11,6 +11,31 @@ Keep them short, in your head say "This commit will..." then the rest of the sen
 ### On the topic of branch creation. Create a branch for a new feature, not every new dev.
 
 And when commiting, commit at sane times, preferrably when you have checked one step in the recipe of what you need to do. A commit should not be considered a save.
+If you have finished a feature and wish to merge it into the main branch, notify someone with acces in the website channel on the discord.
+
+## To Start:
+
+clone repo
+```sh
+git clone git@github.com:SwinRoverTeam/Website.git
+cd Website
+cd swin_rover_app
+```
+
+download dependencies
+```sh
+npm install
+```
+
+build the application
+```sh
+npm run build
+```
+
+open a local instance to test
+```sh
+npm run preview
+```
 
 ## TODO
 
