@@ -41,6 +41,9 @@ npm run preview
 
 Arranged, short term to long term.
 
+- important: fix timing for date of team formation and date of workshop access
+- important: remove dead links
+
 - Reduce git clutter
     - follow above rules
 
