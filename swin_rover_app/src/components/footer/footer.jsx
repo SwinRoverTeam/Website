@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import './footer.css'
 import dotMatrix from '../../assets/test_dot_matrix.png'
-import SRTLogo from '../../assets/srt-logo.svg'
+import SRTLogo from '../../assets/srt-logo-footer.png'
 import RedBulletText from '../redBulletText/redBulletText'
 import '../../index.css'
 import UnderlineButton from '../underlinebutton/underlinebutton'
@@ -47,24 +47,7 @@ function Footer() {
 
 function Banner() {
 	return (
-		<Stack
-			direction={{ xs: 'column', md: 'row' }}
-			alignItems='center'
-			className='heading-box chunk'
-			spacing={8}
-		>
-
-			<img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo' />
-			<Box display={{ xs: 'none', md: 'block' }}>
-				{/* <h2 className='red-bullet'>
-					Let's push the boundaries of what we can achieve together.
-				</h2> */}
-				<RedBulletText
-					text="Let's push the boundaries of what we can achieve together."
-					fontClassName="headline"
-				/>
-			</Box>
-		</Stack>
+		<><img src={SRTLogo} alt='Swinburne Rover Team Logo' className='logo' /></>
 	);
 };
 
@@ -73,7 +56,7 @@ function Respects() {
 		<Stack
 			direction='column'
 			justifyContent='flex-start'
-			className='inter-paragraph acknowledgements'
+			className='acknowledgements'
 		>
 			<p>
 				We acknowledge and pay respects to the Elders and Traditional Owners of the land on which our team works on,
