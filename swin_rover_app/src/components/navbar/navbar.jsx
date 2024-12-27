@@ -5,7 +5,7 @@ import LinkRoundButton from '../roundbutton/linkroundbutton';
 import UnderlineButton from '../underlinebutton/underlinebutton';
 import navIconBlack from '../../assets/nav-icon-black.svg';
 import navIconWhite from '../../assets/nav-icon-white.svg';
-import SRTLogo from '../../assets/srt-logo.svg';
+import SRTLogo from '../../assets/srt-logo.png';
 import TeamImage from '../../assets/srt-image.jpg';
 import MissionImg from '../../assets/mission-thumbnail.jpg';
 import CodeOfConductImg from '../../assets/code-of-conduct-thumbnail.jpg';
